@@ -157,6 +157,7 @@
     "commandSyntaxTeam": "team",
     "commandSyntaxPlaytime": "playtime",
     "commandSyntaxAfktime": "afktime",
+    "commandSyntaxTrack": "track",
     "commandSyntaxTime": "time",
     "commandSyntaxTimer": "timer",
     "commandSyntaxTimers": "timers",
