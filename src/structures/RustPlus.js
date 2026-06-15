@@ -659,6 +659,58 @@ class RustPlus extends RustPlusLib {
 
     /* Commands */
 
+    getAfkDataPath() {
+        return Path.join(__dirname, '..', '..', 'instances', `afktime_${this.guildId}_${this.serverId}.json`);
+    }
+
+    loadAfkData() {
+        const filePath = this.getAfkDataPath();
+        try {
+            if (Fs.existsSync(filePath)) {
+                const data = JSON.parse(Fs.readFileSync(filePath, 'utf8'));
+                /* Reset if wipe happened */
+                if (data.wipeTime !== this.info.wipeTime) return;
+
+                for (const player of this.team.players) {
+                    const saved = data.players[player.steamId];
+                    if (saved) {
+                        player.totalAfkSeconds = saved.seconds;
+                    }
+                }
+            }
+        }
+        catch (e) { /* Ignore corrupt file */ }
+    }
+
+    saveAfkData() {
+        const filePath = this.getAfkDataPath();
+        const players = {};
+        for (const player of this.team.players) {
+            const total = player.getTotalAfkSeconds();
+            if (total > 0) {
+                players[player.steamId] = { name: player.name, seconds: total };
+            }
+        }
+
+        /* Merge with existing file to preserve players who left the team */
+        try {
+            if (Fs.existsSync(filePath)) {
+                const existing = JSON.parse(Fs.readFileSync(filePath, 'utf8'));
+                if (existing.wipeTime === this.info.wipeTime) {
+                    for (const [steamId, data] of Object.entries(existing.players)) {
+                        if (!players[steamId]) {
+                            players[steamId] = data;
+                        }
+                    }
+                }
+            }
+        }
+        catch (e) { /* Ignore */ }
+
+        const data = { wipeTime: this.info.wipeTime, players: players };
+        Fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+    }
+
     getCommandAfk() {
         let string = '';
         for (const player of this.team.players) {
@@ -670,6 +722,40 @@ class RustPlus extends RustPlusLib {
         }
 
         return string !== '' ? `${string.slice(0, -2)}.` : Client.client.intlGet(this.guildId, 'noOneIsAfk');
+    }
+
+    getCommandAfktime() {
+        const results = {};
+
+        /* Load saved data (includes players who left the team) */
+        const filePath = this.getAfkDataPath();
+        try {
+            if (Fs.existsSync(filePath)) {
+                const data = JSON.parse(Fs.readFileSync(filePath, 'utf8'));
+                if (data.wipeTime === this.info.wipeTime) {
+                    for (const [steamId, entry] of Object.entries(data.players)) {
+                        results[steamId] = { name: entry.name, seconds: entry.seconds };
+                    }
+                }
+            }
+        }
+        catch (e) { /* Ignore */ }
+
+        /* Override with current in-memory data for active team members */
+        for (const player of this.team.players) {
+            const totalAfk = player.getTotalAfkSeconds();
+            if (totalAfk > 0) {
+                results[player.steamId] = { name: player.name, seconds: totalAfk };
+            }
+        }
+
+        const sorted = Object.values(results).sort((a, b) => b.seconds - a.seconds);
+        const top = sorted.slice(0, 3);
+
+        if (top.length === 0) return 'No AFK data tracked yet.';
+
+        const lines = top.map((p, i) => `${i + 1}. ${p.name}: ${Timer.secondsToFullScale(p.seconds, 's')}`);
+        return `Top AFK Time (this wipe):\n${lines.join('\n')}`;
     }
 
     getCommandAlive(command) {
@@ -2416,12 +2502,77 @@ class RustPlus extends RustPlusLib {
     }
 
     getCommandTeam() {
-        let string = '';
-        for (const player of this.team.players) {
-            string += `${player.name}, `;
+        const players = this.team.players;
+        const total = players.length;
+        const online = players.filter(p => p.isOnline).length;
+        const alive = players.filter(p => p.isAlive).length;
+        const afk = players.filter(p => p.isAfk()).length;
+
+        return `The current team size is ${total} members | Online: ${online} | Alive: ${alive} | AFK: ${afk}`;
+    }
+
+    async getCommandPlaytime() {
+        const instance = Client.client.getInstance(this.guildId);
+        const battlemetricsId = instance.serverList[this.serverId].battlemetricsId;
+        const bmInstance = Client.client.battlemetricsInstances[battlemetricsId];
+
+        if (!bmInstance || !bmInstance.lastUpdateSuccessful) {
+            return 'Battlemetrics data is not available.';
         }
 
-        return string !== '' ? `${string.slice(0, -2)}.` : null;
+        const wipeTime = new Date(this.info.wipeTime * 1000);
+
+        /* Map team member names to BM player IDs */
+        const teamNames = this.team.players.map(p => p.name.toLowerCase());
+        const bmMatches = [];
+        for (const [bmId, bmPlayer] of Object.entries(bmInstance.players)) {
+            if (teamNames.includes(bmPlayer.name.toLowerCase())) {
+                bmMatches.push({ name: bmPlayer.name, bmId: bmId });
+            }
+        }
+
+        if (bmMatches.length === 0) return 'No team members found in Battlemetrics data.';
+
+        /* Query sessions for each player and sum playtime since wipe */
+        const results = [];
+        for (const match of bmMatches) {
+            let totalSeconds = 0;
+            let nextUrl = `https://api.battlemetrics.com/players/${match.bmId}/relationships/sessions` +
+                `?filter[servers]=${bmInstance.id}&page[size]=100`;
+
+            while (nextUrl) {
+                const data = await bmInstance.request(nextUrl);
+                if (!data || !data.data) break;
+
+                let done = false;
+                for (const session of data.data) {
+                    const start = new Date(session.attributes.start);
+                    const stop = session.attributes.stop ? new Date(session.attributes.stop) : new Date();
+
+                    /* Skip sessions entirely before wipe */
+                    if (stop < wipeTime) { done = true; break; }
+
+                    /* Clamp start to wipe time */
+                    const effectiveStart = start < wipeTime ? wipeTime : start;
+                    totalSeconds += (stop - effectiveStart) / 1000;
+                }
+
+                if (done) break;
+                nextUrl = (data.links && data.links.next) ? data.links.next : null;
+            }
+
+            if (totalSeconds > 0) {
+                results.push({ name: match.name, seconds: totalSeconds });
+            }
+        }
+
+        results.sort((a, b) => b.seconds - a.seconds);
+        const top = results.slice(0, 3);
+
+        if (top.length === 0) return 'No playtime data found for team members.';
+
+        const lines = top.map((p, i) => `${i + 1}. ${p.name}: ${Timer.secondsToFullScale(p.seconds, 's')}`);
+        return `Top Playtime (this wipe):\n${lines.join('\n')}`;
     }
 
     getCommandTime(isInfoChannel = false) {
@@ -2431,14 +2582,17 @@ class RustPlus extends RustPlusLib {
         }
         else {
             const currentTime = Client.client.intlGet(this.guildId, 'inGameTime', { time: time });
-            const timeLeft = this.time.getTimeTillDayOrNight();
+            const timeLeft = this.time.getTimeTillDayOrNight('s');
 
             if (timeLeft === null) return currentTime;
 
-            const locString = this.time.isDay() ? 'timeTillNightfall' : 'timeTillDaylight';
-            const timeTilltransition = Client.client.intlGet(this.guildId, locString, { time: timeLeft });
+            const cycle = this.time.isDay() ? 'night' : 'day';
+            const nextCycle = Client.client.intlGet(this.guildId, 'timeTillNextCycle', {
+                time: timeLeft,
+                cycle: cycle
+            });
 
-            return `${currentTime} ${timeTilltransition}`;
+            return `${currentTime} | ${nextCycle}`;
         }
     }
 

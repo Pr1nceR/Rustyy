@@ -1,0 +1,3013 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "27096251ed3da050843e4faca351b242240f197c",
+  "generatedAt": "2026-06-13T02:29:34.810Z",
+  "files": {
+    ".dockerignore": {
+      "filePath": ".dockerignore",
+      "contentHash": "f2e8b3b5d833e020731abc61e9d136b1b1c40f0b154f6bf1e5c950c48e44b392",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": false
+    },
+    ".github/ISSUE_TEMPLATE/bug_report.md": {
+      "filePath": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "contentHash": "e830e056813c76314ff0f1a1193d00df67fb97446850aa5686b62363f80bd403",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    ".github/ISSUE_TEMPLATE/feature_request.md": {
+      "filePath": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "contentHash": "37a9a86f421ced90e5b58cb55f5e4934a073305daa668cfb7d1b7d43051b1c8e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    ".github/workflows/docker-publish.yml": {
+      "filePath": ".github/workflows/docker-publish.yml",
+      "contentHash": "d479b25ad9fee51c3029cc86e251044339b947378197b947fc355bf984cddfd4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 62,
+      "hasStructuralAnalysis": true
+    },
+    ".github/workflows/lint.yml": {
+      "filePath": ".github/workflows/lint.yml",
+      "contentHash": "23ad52788b59ae7e714d3595c844c1e093372a9d9460a6f60867b5a922fede0e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 20,
+      "hasStructuralAnalysis": true
+    },
+    ".understand-anything/.understandignore": {
+      "filePath": ".understand-anything/.understandignore",
+      "contentHash": "243a1a5a3788f3ab45d70f5eb6a31ea2fa6968b705f8e20f31c5ebef5ee68dc9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    ".understand-anything/tmp/gen-ignore.cjs": {
+      "filePath": ".understand-anything/tmp/gen-ignore.cjs",
+      "contentHash": "da3743419b40e7f6c71f0a4c93423f406883ac1b330af28d50cce65bcb3de331",
+      "functions": [
+        {
+          "name": "norm",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "config/index.js": {
+      "filePath": "config/index.js",
+      "contentHash": "ec53736044971de31fe4c6ae82585a76b60809adc9acbd801cc667d2cc303b6b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 35,
+      "hasStructuralAnalysis": true
+    },
+    "CONTRIBUTING.md": {
+      "filePath": "CONTRIBUTING.md",
+      "contentHash": "fea64e08d297cc7801274413f4a5a6b77001f915c9d1875354bc2fac917eb8bb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 104,
+      "hasStructuralAnalysis": true
+    },
+    "crowdin.yml": {
+      "filePath": "crowdin.yml",
+      "contentHash": "222e1fbef9171fbc53437279d1470a614de0522c1d018c4b6e12ab71c6374ef3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "docker-compose.yml": {
+      "filePath": "docker-compose.yml",
+      "contentHash": "cb35a193ef55dca7e32c05f59624d038cd453538b414187337b6a6d9b5e4e0fb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "Dockerfile": {
+      "filePath": "Dockerfile",
+      "contentHash": "49de2e31051c3895afec0508ddcc8a823eb7b19ebfb0888eb5fb09a237a2a8a5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 18,
+      "hasStructuralAnalysis": true
+    },
+    "docs/commands.md": {
+      "filePath": "docs/commands.md",
+      "contentHash": "cd8e55f77efc3fa1d62960fbc84ec6248b1a02010a64c4f3386e605699f4af9d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 732,
+      "hasStructuralAnalysis": true
+    },
+    "docs/credentials_web_version.md": {
+      "filePath": "docs/credentials_web_version.md",
+      "contentHash": "daeef2958e93da1fe8325a81dcd082b4b89e126cec5a36843f662f9c818fcb73",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 59,
+      "hasStructuralAnalysis": true
+    },
+    "docs/credentials.md": {
+      "filePath": "docs/credentials.md",
+      "contentHash": "85d450089e572d51a1cffb0378942cd618cdc5a5881754e544a31265c5c889d8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 40,
+      "hasStructuralAnalysis": true
+    },
+    "docs/discord_bot_setup.md": {
+      "filePath": "docs/discord_bot_setup.md",
+      "contentHash": "32c1e4b6330dfc08db76f59954a1f9a1a726307c8409a3dbac0d4ca4286155af",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 69,
+      "hasStructuralAnalysis": true
+    },
+    "docs/discord_text_channels.md": {
+      "filePath": "docs/discord_text_channels.md",
+      "contentHash": "778340d0e00f360f55a17a9f78b5f377e4320f5e3b7dcfbf6ef6689a9a40c40c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 140,
+      "hasStructuralAnalysis": true
+    },
+    "docs/documentation.md": {
+      "filePath": "docs/documentation.md",
+      "contentHash": "2c97486a3beb99e708d1883b4fdacf3feb8dd581ad96d2725557413409314e2f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "docs/full_list_features.md": {
+      "filePath": "docs/full_list_features.md",
+      "contentHash": "1320891383694d8f5676dcdd639d8d272ebc1bcf3ab98f5e627e5ae060805673",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 103,
+      "hasStructuralAnalysis": true
+    },
+    "docs/installation.md": {
+      "filePath": "docs/installation.md",
+      "contentHash": "a5b4c7caf30d1fb4f1e43f8fa4a83b4a8129915d562f7133bda5c4fc04b290a9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "docs/pair_and_connect_to_server.md": {
+      "filePath": "docs/pair_and_connect_to_server.md",
+      "contentHash": "696a6faa1a8601772d80c3ee57926744954a18cd777ffe6ab15eedb6f4e5df70",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "docs/smart_devices.md": {
+      "filePath": "docs/smart_devices.md",
+      "contentHash": "ad2de1594ef525b73318eb04fae8e68159676adf6303888000e7549d3ce51598",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 89,
+      "hasStructuralAnalysis": true
+    },
+    "FAQ.md": {
+      "filePath": "FAQ.md",
+      "contentHash": "e20273df3c457fb5668295f0c6021a3753c32525a53c4309a0bf02732c0373a8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 61,
+      "hasStructuralAnalysis": true
+    },
+    "index.ts": {
+      "filePath": "index.ts",
+      "contentHash": "796373e85d6e342b278b19fadaa0c9581360fa73a2014d3e8e7b046c5428a22f",
+      "functions": [
+        {
+          "name": "createMissingDirectories",
+          "params": [],
+          "exported": false,
+          "lineCount": 17
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 69,
+      "hasStructuralAnalysis": true
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "contentHash": "385183d09cdaadf3bd8ee190930635ce923516ea1afc40b8c6f34954968f0a6e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 45,
+      "hasStructuralAnalysis": true
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "3fe5d242bc6c87838a0a0f19710c93c7403450bf53b41f63e78a6971923870fe",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 85,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/alarm.js": {
+      "filePath": "src/commands/alarm.js",
+      "contentHash": "1a2a2c825b281df95fdfdfe824e1bedf1da39c6d0773b0650ba8c3f8a2393467",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 110,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/alias.js": {
+      "filePath": "src/commands/alias.js",
+      "contentHash": "cf5d303f8094345d1d880a06af087ef79f03f45128c7c6ec52222a319b8c16d6",
+      "functions": [
+        {
+          "name": "addAlias",
+          "params": [
+            "client",
+            "interaction"
+          ],
+          "exported": false,
+          "lineCount": 30
+        },
+        {
+          "name": "removeAlias",
+          "params": [
+            "client",
+            "interaction"
+          ],
+          "exported": false,
+          "lineCount": 21
+        },
+        {
+          "name": "showAlias",
+          "params": [
+            "client",
+            "interaction"
+          ],
+          "exported": false,
+          "lineCount": 77
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 217,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/blacklist.js": {
+      "filePath": "src/commands/blacklist.js",
+      "contentHash": "3d7b304f13653afb3babbf958ff7bfdd824723c2aec0e65fe8a5bbba2bb284b8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 264,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/cctv.js": {
+      "filePath": "src/commands/cctv.js",
+      "contentHash": "ed08f1beae9de0f0582021365332d9e0721031b7a3aab9c177e87700eb0b1fb4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 70,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/craft.js": {
+      "filePath": "src/commands/craft.js",
+      "contentHash": "d1cabff8752089aa6259d95eff822533b9182a43acf35ac804af4d4962670710",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 117,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/credentials.js": {
+      "filePath": "src/commands/credentials.js",
+      "contentHash": "2ea9c8a9b85c93c9599482573ff3db211263ddb9414c3d3538faafa2790ee3b4",
+      "functions": [
+        {
+          "name": "addCredentials",
+          "params": [
+            "client",
+            "interaction",
+            "verifyId"
+          ],
+          "exported": false,
+          "lineCount": 66
+        },
+        {
+          "name": "removeCredentials",
+          "params": [
+            "client",
+            "interaction",
+            "verifyId"
+          ],
+          "exported": false,
+          "lineCount": 60
+        },
+        {
+          "name": "showCredentials",
+          "params": [
+            "client",
+            "interaction",
+            "verifyId"
+          ],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "setHosterCredentials",
+          "params": [
+            "client",
+            "interaction",
+            "verifyId"
+          ],
+          "exported": false,
+          "lineCount": 55
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 305,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/decay.js": {
+      "filePath": "src/commands/decay.js",
+      "contentHash": "bb1b411aa7e75e3d1bccbe11165d50a33df1d089e112478b2058232f8c7db969",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 219,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/despawn.js": {
+      "filePath": "src/commands/despawn.js",
+      "contentHash": "c9849661d3b944592b9fe80decfe4cfa39cb5d3357a38682929e0024eb83f639",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 116,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/help.js": {
+      "filePath": "src/commands/help.js",
+      "contentHash": "e527b4df2e93adcc4fc2d7deb7a69cc99271bdeb75b6541e81ed911f3a570e38",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 44,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/item.js": {
+      "filePath": "src/commands/item.js",
+      "contentHash": "58258483281a22b7dfa526f62c791104f006f4eebbba078fbb51f6107981a456",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 127,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/leader.js": {
+      "filePath": "src/commands/leader.js",
+      "contentHash": "b87c5aca36302f6244e4c9f7c62d692d6c64de73b242a4fc8106c15701b49cf8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 132,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/map.js": {
+      "filePath": "src/commands/map.js",
+      "contentHash": "8c0058c2491a67eb43c3b2c4fd1a7f326bfba9e712dee318d494a9692df617d0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 115,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/market.js": {
+      "filePath": "src/commands/market.js",
+      "contentHash": "6a70facca750991d9c85e3b121700fb2dfb794b3c4a2109a9b4d2c8bfb4b8b54",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 414,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/players.js": {
+      "filePath": "src/commands/players.js",
+      "contentHash": "0b07c4cfb9b53e81167ee65bd1b52d29b05dff5dde1ba563c31b0f0914e5571a",
+      "functions": [
+        {
+          "name": "playersNameHandler",
+          "params": [
+            "client",
+            "interaction",
+            "battlemetricsId"
+          ],
+          "exported": false,
+          "lineCount": 37
+        },
+        {
+          "name": "playersPlayerIdHandler",
+          "params": [
+            "client",
+            "interaction",
+            "battlemetricsId"
+          ],
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "displaySpecificUser",
+          "params": [
+            "client",
+            "interaction",
+            "battlemetricsId",
+            "playerId"
+          ],
+          "exported": false,
+          "lineCount": 132
+        },
+        {
+          "name": "displaySeveralUsers",
+          "params": [
+            "client",
+            "interaction",
+            "battlemetricsId",
+            "playerIds",
+            "search"
+          ],
+          "exported": false,
+          "lineCount": 77
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 393,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/recycle.js": {
+      "filePath": "src/commands/recycle.js",
+      "contentHash": "1d04ca30421f52b9b0334d5e3cfc94dce55738859ef1678c58e27908fc692b3a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 127,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/research.js": {
+      "filePath": "src/commands/research.js",
+      "contentHash": "4db7200db450a2bb550d7b99a6a261b77ccc7788af8cb38029a0cce0efc04281",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 110,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/reset.js": {
+      "filePath": "src/commands/reset.js",
+      "contentHash": "926afef991bc785bc947172bd7893e95f452af068cc8ff59c6cb1d71b653d6c3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 274,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/role.js": {
+      "filePath": "src/commands/role.js",
+      "contentHash": "bd95b2013a87d28a6c27db171ebcae5dcec3fed8a16ff6a0f58d5c85581914e4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 106,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/stack.js": {
+      "filePath": "src/commands/stack.js",
+      "contentHash": "b4a8f17e2bc99b4fd52f4f918432975d9264128f869738494647f98a9fd449c9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 116,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/storagemonitor.js": {
+      "filePath": "src/commands/storagemonitor.js",
+      "contentHash": "84fd4213db3932afdbc2a54467c5b89157c24ee98da5365275a9a2e94bcc42b7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 103,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/switch.js": {
+      "filePath": "src/commands/switch.js",
+      "contentHash": "a2e3616d3bca0217552fd8fcb63d477f9b507205e1a5ca38a00d6f026bff262f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 143,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/upkeep.js": {
+      "filePath": "src/commands/upkeep.js",
+      "contentHash": "1d95f09e5f29cc3007218af7ee713015104e5214d26883258f298e95738471f3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 165,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/uptime.js": {
+      "filePath": "src/commands/uptime.js",
+      "contentHash": "1c6ec6dc63f7c92f362f7c999a1a346f204a82c5b8174173297160448fc2b76b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 85,
+      "hasStructuralAnalysis": true
+    },
+    "src/commands/voice.js": {
+      "filePath": "src/commands/voice.js",
+      "contentHash": "42b501bebccf199a87bb6bf2d24dfb6c3e67b9ed78870d5c5313d952052e2705",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 100,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordEvents/error.js": {
+      "filePath": "src/discordEvents/error.js",
+      "contentHash": "2b427894956e4748001b6c86e60889139d668b93e23c838231c710f9afbb61a0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordEvents/guildCreate.js": {
+      "filePath": "src/discordEvents/guildCreate.js",
+      "contentHash": "345f629d28fe7f692634a86c0132799240039266b55603a27bc0a10a6a9df3ba",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordEvents/guildMemberRemove.js": {
+      "filePath": "src/discordEvents/guildMemberRemove.js",
+      "contentHash": "86aa3d7b5fa9aa39163f08ed1807a8622321a59cf3155696e0e92e2e24ddb243",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 52,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordEvents/interactionCreate.js": {
+      "filePath": "src/discordEvents/interactionCreate.js",
+      "contentHash": "11170c899768469aaef72d71cb4ebebabfd933619946505c87f52183bbf59bb2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 84,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordEvents/messageCreate.js": {
+      "filePath": "src/discordEvents/messageCreate.js",
+      "contentHash": "33b63b1a9ab7bb59ef8cc62dc1fab9e3c8842bbf4e5abae71c0cd5ec04af7fd9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 60,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordEvents/rateLimited.js": {
+      "filePath": "src/discordEvents/rateLimited.js",
+      "contentHash": "ac1a0992b0b7758444e3ff4b0c488084ee238fe8d9d78be44288ef5975d28014",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 33,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordEvents/ready.js": {
+      "filePath": "src/discordEvents/ready.js",
+      "contentHash": "d5aea1fe2b83000c80edb2dd716f864f8137d042f1152dc16baead22cea73df1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 82,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordEvents/voiceStateUpdate.js": {
+      "filePath": "src/discordEvents/voiceStateUpdate.js",
+      "contentHash": "eff5e652899f59e50aca4e18f77794e37bf2c10a6af0393193b44f09bc3ccda0",
+      "functions": [
+        {
+          "name": "checkBotLeaveVoice",
+          "params": [
+            "client",
+            "oldState",
+            "newState"
+          ],
+          "exported": false,
+          "lineCount": 40
+        },
+        {
+          "name": "botLeaveVoiceTimeout",
+          "params": [
+            "guildId"
+          ],
+          "exported": false,
+          "lineCount": 6
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 77,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/discordButtons.js": {
+      "filePath": "src/discordTools/discordButtons.js",
+      "contentHash": "b3f6226d5c54851986e85caec7eb937303b864daeee730ebfbfbab2ab19dbed1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 567,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/discordEmbeds.js": {
+      "filePath": "src/discordTools/discordEmbeds.js",
+      "contentHash": "23a3d8935359ee926ce69d3e5af1dec62cdfb61e2f751062d115537ecc933a9f",
+      "functions": [
+        {
+          "name": "isValidUrl",
+          "params": [
+            "url"
+          ],
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1411,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/discordMessages.js": {
+      "filePath": "src/discordTools/discordMessages.js",
+      "contentHash": "8790909adbcefb075ecc81b99ec2d04d4d1663229355916e44f0db1bf3c1a2da",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 603,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/discordModals.js": {
+      "filePath": "src/discordTools/discordModals.js",
+      "contentHash": "52437043bead90afa80bf66ded8ee8edd2031c4ab90a5e54baad6803120c963e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 347,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/discordSelectMenus.js": {
+      "filePath": "src/discordTools/discordSelectMenus.js",
+      "contentHash": "6f2a33b4d148b1193f9852c99550a17144f05061b781180ab22b40f431854ddd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 322,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/discordTextInputs.js": {
+      "filePath": "src/discordTools/discordTextInputs.js",
+      "contentHash": "88aa8af37b38d3704f1fa7f938523b16a8a1c5aff8e4c9556e7dee6d56956772",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 38,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/discordTools.js": {
+      "filePath": "src/discordTools/discordTools.js",
+      "contentHash": "b865c4345e6f1ee882dd0029b80809780afd132a49d753662e3330ded1de062b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 309,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/discordVoice.js": {
+      "filePath": "src/discordTools/discordVoice.js",
+      "contentHash": "708c1aa1f7e8193ca21c222a704382c604f5eca9832d28155739cb87d836d5eb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 52,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/RegisterSlashCommands.js": {
+      "filePath": "src/discordTools/RegisterSlashCommands.js",
+      "contentHash": "80c73a44c53d341ea9744894af084263164cd1b057fa71bb471b33e4cdb5ea62",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 54,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/RemoveGuildChannels.js": {
+      "filePath": "src/discordTools/RemoveGuildChannels.js",
+      "contentHash": "8b85eeba5f846c98fb1a2d76056f9685208ef37f5cac5205468e14a6302447ed",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 41,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/SetupAlarms.js": {
+      "filePath": "src/discordTools/SetupAlarms.js",
+      "contentHash": "8c0b2fe2891768f3eada810bc8f91e25b07b0173d5fa9e500f14e9aa26a8c634",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 49,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/SetupGuildCategory.js": {
+      "filePath": "src/discordTools/SetupGuildCategory.js",
+      "contentHash": "80e1768cbe08376fd773591a0a11bf6fec7c5219bd7b3cbe9f978a0840d41aec",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 47,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/SetupGuildChannels.js": {
+      "filePath": "src/discordTools/SetupGuildChannels.js",
+      "contentHash": "7751aa6c191a3402d38e2b539205d20122acf4483315df1f03f4a023483b20f4",
+      "functions": [
+        {
+          "name": "addTextChannel",
+          "params": [
+            "name",
+            "idName",
+            "client",
+            "guild",
+            "parent"
+          ],
+          "exported": false,
+          "lineCount": 46
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 85,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/SetupServerList.js": {
+      "filePath": "src/discordTools/SetupServerList.js",
+      "contentHash": "a3d6e366a613fd0e70bb0d72f257038cb74c0e89bd98cb59c36ddbc13eeee3bd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 33,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/SetupSettingsMenu.js": {
+      "filePath": "src/discordTools/SetupSettingsMenu.js",
+      "contentHash": "805cd1a5096513a081cbfc4dc46b2623296c7d2a5d12cc900cf16cac5dc31416",
+      "functions": [
+        {
+          "name": "setupGeneralSettings",
+          "params": [
+            "client",
+            "guildId",
+            "channel"
+          ],
+          "exported": false,
+          "lineCount": 219
+        },
+        {
+          "name": "setupNotificationSettings",
+          "params": [
+            "client",
+            "guildId",
+            "channel"
+          ],
+          "exported": false,
+          "lineCount": 29
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 300,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/SetupStorageMonitors.js": {
+      "filePath": "src/discordTools/SetupStorageMonitors.js",
+      "contentHash": "c2d59459357d3bbf039bc07a84e196ea5fda3919377a17236f67dead4ac5a7c7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 80,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/SetupSwitches.js": {
+      "filePath": "src/discordTools/SetupSwitches.js",
+      "contentHash": "afc30ab8531910d8443d480ae5a4e5473540e217f8037e6cf9b635d914909c9e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 54,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/SetupSwitchGroups.js": {
+      "filePath": "src/discordTools/SetupSwitchGroups.js",
+      "contentHash": "eef22970318aa68ceff5f44fcce451a6e31d0441adbec44288bab5598179b6eb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 36,
+      "hasStructuralAnalysis": true
+    },
+    "src/discordTools/SetupTrackers.js": {
+      "filePath": "src/discordTools/SetupTrackers.js",
+      "contentHash": "2debcb03cacb0883712346b0f7f14e53ce39007345e6da841c764978a77052a0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "src/external/findUnusedPhrases.js": {
+      "filePath": "src/external/findUnusedPhrases.js",
+      "contentHash": "93582e70f7cc908bd3c9f376dcdefe8fd4a699c57b6ef7e3e710a30d47758e47",
+      "functions": [
+        {
+          "name": "recursiveSearchOfAllFiles",
+          "params": [
+            "path"
+          ],
+          "exported": false,
+          "lineCount": 14
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 76,
+      "hasStructuralAnalysis": true
+    },
+    "src/external/process_items.js": {
+      "filePath": "src/external/process_items.js",
+      "contentHash": "a4491dc299bb52edb0ec7d903ed02f7a8a085d006230a9b5f23e4de1025cafb7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 49,
+      "hasStructuralAnalysis": true
+    },
+    "src/external/process_rustlabs.js": {
+      "filePath": "src/external/process_rustlabs.js",
+      "contentHash": "5529cfbeb7c33b77ecd1e814c84652ed6a1fa9962e0b0acc7ae148c7d62feaae",
+      "functions": [
+        {
+          "name": "scrape",
+          "params": [
+            "url"
+          ],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "sleep",
+          "params": [
+            "ms"
+          ],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "exit",
+          "params": [],
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "parseTime",
+          "params": [
+            "time"
+          ],
+          "exported": false,
+          "lineCount": 33
+        },
+        {
+          "name": "processAll",
+          "params": [],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "processAllItems",
+          "params": [],
+          "exported": false,
+          "lineCount": 48
+        },
+        {
+          "name": "processAllLootContainers",
+          "params": [],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "processAllBuildingBlocks",
+          "params": [],
+          "exported": false,
+          "lineCount": 42
+        },
+        {
+          "name": "processAllOther",
+          "params": [],
+          "exported": false,
+          "lineCount": 43
+        },
+        {
+          "name": "processItemCraft",
+          "params": [
+            "rustlabsName",
+            "shortname",
+            "name",
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 52
+        },
+        {
+          "name": "processItemResearch",
+          "params": [
+            "rustlabsName",
+            "shortname",
+            "name",
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 70
+        },
+        {
+          "name": "processItemRecycle",
+          "params": [
+            "rustlabsName",
+            "shortname",
+            "name",
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 78
+        },
+        {
+          "name": "processItemDurability",
+          "params": [
+            "rustlabsName",
+            "shortname",
+            "name",
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 162
+        },
+        {
+          "name": "processItemSmelting",
+          "params": [
+            "rustlabsName",
+            "shortname",
+            "name",
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 111
+        },
+        {
+          "name": "processItemDespawn",
+          "params": [
+            "rustlabsName",
+            "shortname",
+            "name",
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 23
+        },
+        {
+          "name": "processItemStack",
+          "params": [
+            "rustlabsName",
+            "shortname",
+            "name",
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 21
+        },
+        {
+          "name": "processItemDecay",
+          "params": [
+            "rustlabsName",
+            "shortname",
+            "name",
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 111
+        },
+        {
+          "name": "processItemUpkeep",
+          "params": [
+            "rustlabsName",
+            "shortname",
+            "name",
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 47
+        },
+        {
+          "name": "main",
+          "params": [],
+          "exported": false,
+          "lineCount": 17
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1042,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/battlemetricsHandler.js": {
+      "filePath": "src/handlers/battlemetricsHandler.js",
+      "contentHash": "b9f658c0b0c3560180e256904d3a76feaabe862ef3bab48ea26d8398601eacdd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 440,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/buttonHandler.js": {
+      "filePath": "src/handlers/buttonHandler.js",
+      "contentHash": "080db8c231e7a2b8cdff4ffdbcf52934934397157bfc3013c5c6b6419edf98d5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1161,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/discordCommandHandler.js": {
+      "filePath": "src/handlers/discordCommandHandler.js",
+      "contentHash": "c89c467577e3124e431b532e63ce182cf129b1d936c4ca3a586bf833d85172bb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 227,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/informationHandler.js": {
+      "filePath": "src/handlers/informationHandler.js",
+      "contentHash": "2829124de1dbf38216f3fa213ad244100892e953117f420a1adc6a29215f5f4b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 38,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/inGameChatHandler.js": {
+      "filePath": "src/handlers/inGameChatHandler.js",
+      "contentHash": "b72fe1905363ce4ca4911a425a0391f4925bb7427b896d5f480c731be56ea800",
+      "functions": [
+        {
+          "name": "handleMessage",
+          "params": [
+            "rustplus",
+            "message",
+            "trademarkString",
+            "maxLength"
+          ],
+          "exported": false,
+          "lineCount": 9
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 85,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/inGameCommandHandler.js": {
+      "filePath": "src/handlers/inGameCommandHandler.js",
+      "contentHash": "4186c833f132d57d8e12d23f783ab97a1e2a4bef32d9559ae8bbe1bd3b758e8f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 240,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/modalHandler.js": {
+      "filePath": "src/handlers/modalHandler.js",
+      "contentHash": "876163a98e6be8ae35ee6b60d6ea82ca3b9e5e9507a91764544956aea5da811b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 399,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/permissionHandler.js": {
+      "filePath": "src/handlers/permissionHandler.js",
+      "contentHash": "c33b92c97dd5d30e01bb07fb0ee88d5d3ed80c73b88e10b101042cd9be30da49",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 124,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/pollingHandler.js": {
+      "filePath": "src/handlers/pollingHandler.js",
+      "contentHash": "c12eeebad6da1b66ae8124c2d4d497b3991a77659f215df0ba3367e07ee4b4e0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 72,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/selectMenuHandler.js": {
+      "filePath": "src/handlers/selectMenuHandler.js",
+      "contentHash": "4eec76e153074a5060a1837764ed4d910afc0f2f23d304a4395c6599a77a51fa",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 157,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/smartAlarmHandler.js": {
+      "filePath": "src/handlers/smartAlarmHandler.js",
+      "contentHash": "754498b3ad8a93f90e2d01ae24e0ef157a9cb487bc00fb1410250a3932395f5a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 93,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/smartSwitchGroupHandler.js": {
+      "filePath": "src/handlers/smartSwitchGroupHandler.js",
+      "contentHash": "5ea692d825767f01b20596758c8d7e2837fa3e21eaf14deb12e12161ecc3414a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 207,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/smartSwitchHandler.js": {
+      "filePath": "src/handlers/smartSwitchHandler.js",
+      "contentHash": "26f873dc36b34b9b511eca7e88048bfbb9e5ce7c6178a0ebf678230c9e3c6e5d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 521,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/storageMonitorHandler.js": {
+      "filePath": "src/handlers/storageMonitorHandler.js",
+      "contentHash": "86fefbd7b142cb054243d8846243dd2aa8b780d4488b67777c8676e6f22c042f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 107,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/teamChatHandler.js": {
+      "filePath": "src/handlers/teamChatHandler.js",
+      "contentHash": "c05a1d0fd182c1c627e58ea553aa405786f3bb270845a92b7520096cdb7b64ac",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 25,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/teamHandler.js": {
+      "filePath": "src/handlers/teamHandler.js",
+      "contentHash": "ff1358d3bc3085ccd7f4db9823f40ceb8a39cc1370e6c522ff0de29190d4cbe4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 134,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/timeHandler.js": {
+      "filePath": "src/handlers/timeHandler.js",
+      "contentHash": "4962b418c6dce0dbb5ac8413bc971ff49499e3c2eaf3a40b824972fac86a369c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 133,
+      "hasStructuralAnalysis": true
+    },
+    "src/handlers/vendingMachineHandler.js": {
+      "filePath": "src/handlers/vendingMachineHandler.js",
+      "contentHash": "4e921e0f7d2df608dde82616244ad816b4af9328a24365493ecb8ed013dee144",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 121,
+      "hasStructuralAnalysis": true
+    },
+    "src/languages/cs.json": {
+      "filePath": "src/languages/cs.json",
+      "contentHash": "efd6255acbc886a7fb8ba9af1a67af49a727076e2d1d40743fa57906e89b1e7a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 790,
+      "hasStructuralAnalysis": true
+    },
+    "src/languages/de.json": {
+      "filePath": "src/languages/de.json",
+      "contentHash": "b9b2eed957108391c314ede20564b8af53fdb15a500e21f12517203ba2fcfbd5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 790,
+      "hasStructuralAnalysis": true
+    },
+    "src/languages/en.json": {
+      "filePath": "src/languages/en.json",
+      "contentHash": "790473990ad4dd430d51e57eb5f4aa36c00473fa8a0e37d8a7a45fd900849797",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 790,
+      "hasStructuralAnalysis": true
+    },
+    "src/languages/es.json": {
+      "filePath": "src/languages/es.json",
+      "contentHash": "ea980f9a6069179be83cd5f5168f80347db151e2e4938564d85201187f72c7d8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 790,
+      "hasStructuralAnalysis": true
+    },
+    "src/languages/fr.json": {
+      "filePath": "src/languages/fr.json",
+      "contentHash": "3fd88511ecef4c7facbd7e04459cc63b43f9ca93b2bb206d20203249dd1aa9e2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 790,
+      "hasStructuralAnalysis": true
+    },
+    "src/languages/it.json": {
+      "filePath": "src/languages/it.json",
+      "contentHash": "b6446eee4fd721d41841a4a4c1a8f81b2f06d80740b837283c7c9d54c21451c1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 790,
+      "hasStructuralAnalysis": true
+    },
+    "src/languages/ko.json": {
+      "filePath": "src/languages/ko.json",
+      "contentHash": "bd1bdb9b426d8e55efebff27f12e8a7b73aba00e91db9439244c963bc1e7c438",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 790,
+      "hasStructuralAnalysis": true
+    },
+    "src/languages/pl.json": {
+      "filePath": "src/languages/pl.json",
+      "contentHash": "c63019ee03d22424aaca23dfd15201add5e32313641405d720827a6848dfb333",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 790,
+      "hasStructuralAnalysis": true
+    },
+    "src/languages/pt.json": {
+      "filePath": "src/languages/pt.json",
+      "contentHash": "a03568a779b1b88f95dc40a72ee2716dd29fc8ba48c5ef9c696aea3852972535",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 790,
+      "hasStructuralAnalysis": true
+    },
+    "src/languages/ru.json": {
+      "filePath": "src/languages/ru.json",
+      "contentHash": "73af05561d0b3201f305a170598eac4a7e1901e0d0a1f91ba96b0c59f38e7671",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 790,
+      "hasStructuralAnalysis": true
+    },
+    "src/languages/sv.json": {
+      "filePath": "src/languages/sv.json",
+      "contentHash": "bc919ab45aad3b25c8924cbe365f3755e8af9d8e2cd00b6417f1d9f1d5263ecc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 790,
+      "hasStructuralAnalysis": true
+    },
+    "src/languages/tr.json": {
+      "filePath": "src/languages/tr.json",
+      "contentHash": "29709510a43b94970e4b97448144dcd7e223c0e0b6d29296f8230ed6aaf59b42",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 790,
+      "hasStructuralAnalysis": true
+    },
+    "src/resources/fonts/PermanentMarker.fnt": {
+      "filePath": "src/resources/fonts/PermanentMarker.fnt",
+      "contentHash": "fa24dab692bd05db5e61731ee9f35255c5da34d24e4f4226e379d1f79d96d22d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 101,
+      "hasStructuralAnalysis": false
+    },
+    "src/resources/fonts/YuGothic.fnt": {
+      "filePath": "src/resources/fonts/YuGothic.fnt",
+      "contentHash": "52ad26f6ed776962f393a6591c18892ee79b1ed44cf2a961cb6e64be263cdc00",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 542,
+      "hasStructuralAnalysis": false
+    },
+    "src/rustplusEvents/connected.js": {
+      "filePath": "src/rustplusEvents/connected.js",
+      "contentHash": "afcfac5b04502d5ef1cc7836ed3333ed18de44a29f3977dafda16b817230b062",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 115,
+      "hasStructuralAnalysis": true
+    },
+    "src/rustplusEvents/connecting.js": {
+      "filePath": "src/rustplusEvents/connecting.js",
+      "contentHash": "4eb61063e28192fda963153f83e72e78192045d9cecc7815cc1562e975653e69",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    "src/rustplusEvents/disconnected.js": {
+      "filePath": "src/rustplusEvents/disconnected.js",
+      "contentHash": "7fcc229a48b3811b07ae293b0f9196652bd3b3e6331909e00a76fba51d7f6124",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 89,
+      "hasStructuralAnalysis": true
+    },
+    "src/rustplusEvents/error.js": {
+      "filePath": "src/rustplusEvents/error.js",
+      "contentHash": "7f40bbbbb1d9eb9f562abd4579637bc51de301c5e1a91aa48d19b9181448ead9",
+      "functions": [
+        {
+          "name": "errorTimedOut",
+          "params": [
+            "rustplus",
+            "client",
+            "err"
+          ],
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "errorNotFound",
+          "params": [
+            "rustplus",
+            "client",
+            "err"
+          ],
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "errorConnRefused",
+          "params": [
+            "rustplus",
+            "client",
+            "err"
+          ],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "errorOther",
+          "params": [
+            "rustplus",
+            "client",
+            "err"
+          ],
+          "exported": false,
+          "lineCount": 6
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 77,
+      "hasStructuralAnalysis": true
+    },
+    "src/rustplusEvents/message.js": {
+      "filePath": "src/rustplusEvents/message.js",
+      "contentHash": "5a506fd82b42e348a4b33d50aa52681d59fd1b499aa89af6b53e4b98686521a0",
+      "functions": [
+        {
+          "name": "messageResponse",
+          "params": [
+            "rustplus",
+            "client",
+            "message"
+          ],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "messageBroadcast",
+          "params": [
+            "rustplus",
+            "client",
+            "message"
+          ],
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "messageBroadcastTeamChanged",
+          "params": [
+            "rustplus",
+            "client",
+            "message"
+          ],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "messageBroadcastTeamMessage",
+          "params": [
+            "rustplus",
+            "client",
+            "message"
+          ],
+          "exported": false,
+          "lineCount": 53
+        },
+        {
+          "name": "messageBroadcastEntityChanged",
+          "params": [
+            "rustplus",
+            "client",
+            "message"
+          ],
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "messageBroadcastCameraRays",
+          "params": [
+            "rustplus",
+            "client",
+            "message"
+          ],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "messageBroadcastEntityChangedSmartSwitch",
+          "params": [
+            "rustplus",
+            "client",
+            "message"
+          ],
+          "exported": false,
+          "lineCount": 26
+        },
+        {
+          "name": "messageBroadcastEntityChangedSmartAlarm",
+          "params": [
+            "rustplus",
+            "client",
+            "message"
+          ],
+          "exported": false,
+          "lineCount": 25
+        },
+        {
+          "name": "messageBroadcastEntityChangedStorageMonitor",
+          "params": [
+            "rustplus",
+            "client",
+            "message"
+          ],
+          "exported": false,
+          "lineCount": 38
+        },
+        {
+          "name": "updateToolCupboard",
+          "params": [
+            "rustplus",
+            "client",
+            "message"
+          ],
+          "exported": false,
+          "lineCount": 38
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 273,
+      "hasStructuralAnalysis": true
+    },
+    "src/rustplusEvents/request.js": {
+      "filePath": "src/rustplusEvents/request.js",
+      "contentHash": "c32464896f15ccd125d4338eacde3a4351d279c561b5a74de64bed9a09a7e8c6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/actors.json": {
+      "filePath": "src/staticFiles/actors.json",
+      "contentHash": "ab92091576051c24f8e3754558a6d059fa5876d053e2e9ebb0988832cb99afb3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 46,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/cctv.json": {
+      "filePath": "src/staticFiles/cctv.json",
+      "contentHash": "96d7a76eee6a7cd4830bab430e0007000a1a42578588f79ac2d1f1a04d2bf28a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 114,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/htmlReservedSymbols.json": {
+      "filePath": "src/staticFiles/htmlReservedSymbols.json",
+      "contentHash": "74d1b13d05bf7eaa0a84d50d3bce0d181c0f2dab4e24792b237e821b9cb3ee71",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 103,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/items.json": {
+      "filePath": "src/staticFiles/items.json",
+      "contentHash": "7942363e8d1047b39525cccba50105b555c2d0aa86f0fdf1213257480de00594",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 6028,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/RandomUsernames.json": {
+      "filePath": "src/staticFiles/RandomUsernames.json",
+      "contentHash": "8c839e61ca584ec6947c0c848735ba6ec89fe415e61a93f47e79430ba7fc9c72",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5168,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/rustlabsBuildingBlocks.json": {
+      "filePath": "src/staticFiles/rustlabsBuildingBlocks.json",
+      "contentHash": "ccff008048dcbf7db1e59c37789de988e1427e50d1f7d3614891d1806978d8c8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 102,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/rustlabsCraftData.json": {
+      "filePath": "src/staticFiles/rustlabsCraftData.json",
+      "contentHash": "6062d91ddab87d803a841d8adfceee8ffe2fa668861733719d319c45ceda69f5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 7108,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/rustlabsDecayData.json": {
+      "filePath": "src/staticFiles/rustlabsDecayData.json",
+      "contentHash": "365e098486d11f5da97201367a33aae3f54da84baeb8943335a35f161b797c7e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2960,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/rustlabsDespawnData.json": {
+      "filePath": "src/staticFiles/rustlabsDespawnData.json",
+      "contentHash": "d27d5c569392f515d28899d101c5e1fda36b58682bbc7278bac7f6adca6cfdac",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 3162,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/rustlabsDurabilityData.json": {
+      "filePath": "src/staticFiles/rustlabsDurabilityData.json",
+      "contentHash": "eda1d5dc5058830c8eccf948703d62edd2fb48d00cd674ba86c8cdbeb20d3428",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 784152,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/rustlabsOther.json": {
+      "filePath": "src/staticFiles/rustlabsOther.json",
+      "contentHash": "435623e1a80f911d1a685c54b3f0756d6688f48c167a5a080a968138dd80b71a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 58,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/rustlabsRecycleData.json": {
+      "filePath": "src/staticFiles/rustlabsRecycleData.json",
+      "contentHash": "e830a77e35a9fd0102c0d3b570acb6688bbeb9329b1536d6ec25ea5bf434ecf6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 20978,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/rustlabsResearchData.json": {
+      "filePath": "src/staticFiles/rustlabsResearchData.json",
+      "contentHash": "173c802b8b86cd3d51f5a8050ddeedf41fd51b334600166f7a95b9fab4e24528",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2302,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/rustlabsSmeltingData.json": {
+      "filePath": "src/staticFiles/rustlabsSmeltingData.json",
+      "contentHash": "1a9450eadb1139ee5c45b46af8b102856971cf8f79eea9a2a6c1039d94401b7b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1363,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/rustlabsStackData.json": {
+      "filePath": "src/staticFiles/rustlabsStackData.json",
+      "contentHash": "462cea16b025bdb3e3e9296e8b2e04108abe6daeb937ac6f0064fb4e6a96b6b7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2366,
+      "hasStructuralAnalysis": true
+    },
+    "src/staticFiles/rustlabsUpkeepData.json": {
+      "filePath": "src/staticFiles/rustlabsUpkeepData.json",
+      "contentHash": "3c42c105303cc432a5d52a96b6859bff11e72e620990b9a88f7bf3e95743afc9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 737,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/Battlemetrics.js": {
+      "filePath": "src/structures/Battlemetrics.js",
+      "contentHash": "b525a2fb7dc9fbc7c699e3f6a6be95bc6e6a1f88832c0b6ef65ed1460c3d0b84",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Battlemetrics",
+          "methods": [
+            "constructor",
+            "id",
+            "id",
+            "name",
+            "name",
+            "data",
+            "data",
+            "ready",
+            "ready",
+            "updatedAt",
+            "updatedAt",
+            "lastUpdateSuccessful",
+            "lastUpdateSuccessful",
+            "rustmapsAvailable",
+            "rustmapsAvailable",
+            "streamerMode",
+            "streamerMode",
+            "serverLog",
+            "serverLog",
+            "connectionLog",
+            "connectionLog",
+            "players",
+            "players",
+            "newPlayers",
+            "newPlayers",
+            "loginPlayers",
+            "loginPlayers",
+            "logoutPlayers",
+            "logoutPlayers",
+            "nameChangedPlayers",
+            "nameChangedPlayers",
+            "onlinePlayers",
+            "onlinePlayers",
+            "offlinePlayers",
+            "offlinePlayers",
+            "serverEvaluation",
+            "serverEvaluation",
+            "SEARCH_SERVER_NAME_API_CALL",
+            "GET_SERVER_DATA_API_CALL",
+            "GET_PROFILE_DATA_API_CALL",
+            "GET_SERVER_MOST_TIME_PLAYED_API_CALL",
+            "GET_BATTLEMETRICS_PLAYER_URL",
+            "request",
+            "setup",
+            "updateStreamerMode",
+            "getServerIdFromName",
+            "getProfileData",
+            "evaluation",
+            "update",
+            "getOnlineTime",
+            "getOfflineTime",
+            "getOnlinePlayerIdsOrderedByTime",
+            "getOfflinePlayerIdsOrderedByLeastTimeSinceOnline",
+            "getOfflineTime"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 787
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 820,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/Cctv.js": {
+      "filePath": "src/structures/Cctv.js",
+      "contentHash": "dd7c44d5c7e5d75a5abf00656fedbda59ced32321b91b1bd7ae8b6a3fc11332c",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Cctv",
+          "methods": [
+            "constructor",
+            "cctvs",
+            "cctvs",
+            "cctvExist",
+            "isDynamic",
+            "getCodes"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 23
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 49,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/DiscordBot.js": {
+      "filePath": "src/structures/DiscordBot.js",
+      "contentHash": "ccee2246a9054f9ea279b16d9af3327fbc0324a30aee77e862fb947e7dfc4bbc",
+      "functions": [],
+      "classes": [
+        {
+          "name": "DiscordBot",
+          "methods": [
+            "constructor",
+            "loadDiscordCommands",
+            "loadDiscordEvents",
+            "loadEnIntl",
+            "loadBotIntl",
+            "loadGuildIntl",
+            "loadGuildsIntl",
+            "intlGet",
+            "build",
+            "log",
+            "logInteraction",
+            "setupGuild",
+            "syncCredentialsWithUsers",
+            "getInstance",
+            "setInstance",
+            "readNotificationSettingsTemplate",
+            "readGeneralSettingsTemplate",
+            "createRustplusInstance",
+            "createRustplusInstancesFromConfig",
+            "resetRustplusVariables",
+            "isJpgImageChanged",
+            "findAvailableTrackerId",
+            "findAvailableGroupId",
+            "updateBattlemetricsInstances",
+            "interactionReply",
+            "interactionEditReply",
+            "interactionUpdate",
+            "messageEdit",
+            "messageSend",
+            "messageReply",
+            "validatePermissions",
+            "isAdministrator"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 513
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 553,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/Info.js": {
+      "filePath": "src/structures/Info.js",
+      "contentHash": "bba41ff6b6b6e0e2e952dcb96412a4c66079d8f9363978746fe8b8736fa8e5c8",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Info",
+          "methods": [
+            "constructor",
+            "name",
+            "name",
+            "headerImage",
+            "headerImage",
+            "url",
+            "url",
+            "map",
+            "map",
+            "mapSize",
+            "mapSize",
+            "wipeTime",
+            "wipeTime",
+            "players",
+            "players",
+            "maxPlayers",
+            "maxPlayers",
+            "queuedPlayers",
+            "queuedPlayers",
+            "seed",
+            "seed",
+            "salt",
+            "salt",
+            "correctedMapSize",
+            "correctedMapSize",
+            "isNameChanged",
+            "isHeaderImageChanged",
+            "isUrlChanged",
+            "isMapChanged",
+            "isMapSizeChanged",
+            "isWipeTimeChanged",
+            "isPlayersChanged",
+            "isMaxPlayersChanged",
+            "isQueuedPlayersChanged",
+            "isSeedChanged",
+            "isSaltChanged",
+            "isMaxPlayersIncreased",
+            "isMaxPlayersDecreased",
+            "isQueue",
+            "updateInfo",
+            "getSecondsSinceWipe",
+            "getTimeSinceWipe"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 80
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 105,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/Items.js": {
+      "filePath": "src/structures/Items.js",
+      "contentHash": "1d3f4d327f197e7c3f454c98200af464482efb748848b18137423eebc8ca3d31",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Items",
+          "methods": [
+            "constructor",
+            "items",
+            "itemNames",
+            "addItem",
+            "removeItem",
+            "itemExist",
+            "getShortName",
+            "getName",
+            "getDescription",
+            "getIdByName",
+            "getClosestItemIdByName"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 44
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 71,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/Logger.js": {
+      "filePath": "src/structures/Logger.js",
+      "contentHash": "28f8607fb98c8b34c4a18dfba2812f9d1c59fcb24a96963b5bda089eae97b207",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Logger",
+          "methods": [
+            "constructor",
+            "setGuildId",
+            "getTime",
+            "log"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 92
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 119,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/Map.js": {
+      "filePath": "src/structures/Map.js",
+      "contentHash": "2d2fa2aca73a1d0631442bc5abcdaeb6058788fa5c3b9d8ee74cd4fee453882d",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Map",
+          "methods": [
+            "constructor",
+            "width",
+            "width",
+            "height",
+            "height",
+            "oceanMargin",
+            "oceanMargin",
+            "monuments",
+            "monuments",
+            "background",
+            "background",
+            "rustplus",
+            "rustplus",
+            "font",
+            "font",
+            "mapMarkerImageMeta",
+            "mapMarkerImageMeta",
+            "monumentInfo",
+            "monumentInfo",
+            "isWidthChanged",
+            "isHeightChanged",
+            "isOceanMarginChanged",
+            "isMonumentsChanged",
+            "isBackgroundChanged",
+            "updateMap",
+            "resetImageAndMeta",
+            "writeMapClean",
+            "setupFont",
+            "setupMapMarkerImages",
+            "mapAppendMonuments",
+            "mapAppendMarkers",
+            "writeMap",
+            "getMarkerImageMetaByType",
+            "getMonumentsByName",
+            "calculateImageXY",
+            "gmWriteAsync"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 490
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 521,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/MapMarkers.js": {
+      "filePath": "src/structures/MapMarkers.js",
+      "contentHash": "6752ad159e23673e2277ec30620bac1dd07c7d55094be58a83b5206f43eb2f13",
+      "functions": [],
+      "classes": [
+        {
+          "name": "MapMarkers",
+          "methods": [
+            "constructor",
+            "markers",
+            "markers",
+            "rustplus",
+            "rustplus",
+            "client",
+            "client",
+            "types",
+            "types",
+            "players",
+            "players",
+            "vendingMachines",
+            "vendingMachines",
+            "ch47s",
+            "ch47s",
+            "cargoShips",
+            "cargoShips",
+            "genericRadiuses",
+            "genericRadiuses",
+            "patrolHelicopters",
+            "patrolHelicopters",
+            "travelingVendors",
+            "travelingVendors",
+            "getType",
+            "getMarkersOfType",
+            "getMarkerByTypeId",
+            "getMarkerByTypeXY",
+            "isMarkerPresentByTypeId",
+            "getNewMarkersOfTypeId",
+            "getLeftMarkersOfTypeId",
+            "getRemainingMarkersOfTypeId",
+            "isMarkerPresentByTypeXY",
+            "getNewMarkersOfTypeXY",
+            "getLeftMarkersOfTypeXY",
+            "getRemainingMarkersOfTypeXY",
+            "updateMapMarkers",
+            "updatePlayers",
+            "updateVendingMachines",
+            "updateCH47s",
+            "updateCargoShips",
+            "updateGenericRadiuses",
+            "updatePatrolHelicopters",
+            "updateTravelingVendors",
+            "notifyCargoShipEgress",
+            "notifyCrateSmallOilRigOpen",
+            "notifyCrateLargeOilRigOpen",
+            "getClosestMonument",
+            "reset"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 875
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 901,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/Player.js": {
+      "filePath": "src/structures/Player.js",
+      "contentHash": "61542bbec33bbf4e645cda15c4b8b5404600b7bea7b5909e37cdd27ee1338da7",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Player",
+          "methods": [
+            "constructor",
+            "steamId",
+            "steamId",
+            "name",
+            "name",
+            "x",
+            "x",
+            "y",
+            "y",
+            "isOnline",
+            "isOnline",
+            "spawnTime",
+            "spawnTime",
+            "isAlive",
+            "isAlive",
+            "deathTime",
+            "deathTime",
+            "rustplus",
+            "rustplus",
+            "pos",
+            "pos",
+            "lastMovement",
+            "lastMovement",
+            "teamLeader",
+            "teamLeader",
+            "afkSeconds",
+            "afkSeconds",
+            "wentOfflineTime",
+            "wentOfflineTime",
+            "isSteamIdChanged",
+            "isNameChanged",
+            "isXChanged",
+            "isYChanged",
+            "isOnlineChanged",
+            "isSpawnTimeChanged",
+            "isAliveChanged",
+            "isDeathTimeChanged",
+            "isGoneOnline",
+            "isGoneOffline",
+            "isGoneAlive",
+            "isGoneDead",
+            "isMoved",
+            "isAfk",
+            "isGoneAfk",
+            "updatePlayer",
+            "updatePos",
+            "getAfkSeconds",
+            "getAfkTime",
+            "getAliveSeconds",
+            "getAliveTime",
+            "getDeathSeconds",
+            "getDeathTime",
+            "getOfflineTime",
+            "assignLeader"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 148
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 174,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/RustLabs.js": {
+      "filePath": "src/structures/RustLabs.js",
+      "contentHash": "2bf5d1c280a0f9fc92f130f989ef389d8dade4729dd9e8f58eb1e606dd8db2c6",
+      "functions": [],
+      "classes": [
+        {
+          "name": "RustLabs",
+          "methods": [
+            "constructor",
+            "craftData",
+            "researchData",
+            "recycleData",
+            "durabilityData",
+            "smeltingData",
+            "despawnData",
+            "stackData",
+            "decayData",
+            "upkeepData",
+            "items",
+            "rustlabsBuildingBlocks",
+            "rustlabsOther",
+            "durabilityGroups",
+            "durabilityWhich",
+            "orderedBy",
+            "buildingBlocks",
+            "other",
+            "getDurabilityGroups",
+            "getDurabilityWhich",
+            "getOrderedBy",
+            "getClosestBuildingBlockNameByName",
+            "getClosestOtherNameByName",
+            "getArrayOrderedBy",
+            "getArrayOrderedByChoice",
+            "hasCraftDetails",
+            "getCraftDetailsByName",
+            "getCraftDetailsById",
+            "hasResearchDetails",
+            "getResearchDetailsByName",
+            "getResearchDetailsById",
+            "hasRecycleDetails",
+            "getRecycleDetailsByName",
+            "getRecycleDetailsById",
+            "getRecycleDataFromArray",
+            "hasDurabilityDetails",
+            "getDurabilityDetailsByName",
+            "getDurabilityDetailsById",
+            "hasSmeltingDetails",
+            "getSmeltingDetailsByName",
+            "getSmeltingDetailsById",
+            "getSmeltingDetailsFromParameterById",
+            "hasDespawnDetails",
+            "getDespawnDetailsByName",
+            "getDespawnDetailsById",
+            "hasStackDetails",
+            "getStackDetailsByName",
+            "getStackDetailsById",
+            "hasDecayDetails",
+            "getDecayDetailsByName",
+            "getDecayDetailsById",
+            "hasUpkeepDetails",
+            "getUpkeepDetailsByName",
+            "getUpkeepDetailsById"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 788
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 830,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/RustPlus.js": {
+      "filePath": "src/structures/RustPlus.js",
+      "contentHash": "95f15c7e7e4455b20a4327959eda7bda0a14d39ab641a4e822b95a7ff10fb0c7",
+      "functions": [],
+      "classes": [
+        {
+          "name": "RustPlus",
+          "methods": [
+            "constructor",
+            "loadRustPlusEvents",
+            "loadMarkers",
+            "build",
+            "updateLeaderRustPlusLiteInstance",
+            "isServerAvailable",
+            "updateConnections",
+            "updateDeaths",
+            "updateEvents",
+            "updateBotMessages",
+            "deleteThisRustplusInstance",
+            "log",
+            "logInGameCommand",
+            "sendInGameMessage",
+            "sendEvent",
+            "replenishTokens",
+            "waitForAvailableTokens",
+            "turnSmartSwitchAsync",
+            "turnSmartSwitchOnAsync",
+            "turnSmartSwitchOffAsync",
+            "setEntityValueAsync",
+            "sendTeamMessageAsync",
+            "getEntityInfoAsync",
+            "getMapAsync",
+            "getTimeAsync",
+            "getMapMarkersAsync",
+            "getInfoAsync",
+            "getTeamInfoAsync",
+            "subscribeToCameraAsync",
+            "unsubscribeFromCameraAsync",
+            "sendCameraInputAsync",
+            "promoteToLeaderAsync",
+            "getTeamChatAsync",
+            "checkSubscriptionAsync",
+            "setSubscriptionAsync",
+            "getCameraFrameAsync",
+            "isResponseValid",
+            "getCommandAfk",
+            "getCommandAlive",
+            "getCommandCargo",
+            "getCommandChinook",
+            "getCommandConnection",
+            "getCommandCraft",
+            "getCommandDeath",
+            "getCommandDecay",
+            "getCommandDespawn",
+            "getCommandEvents",
+            "getCommandHeli",
+            "getCommandLarge",
+            "getCommandLeader",
+            "getCommandMarker",
+            "getCommandMarket",
+            "getCommandMute",
+            "getCommandNote",
+            "getCommandOffline",
+            "getCommandOnline",
+            "getCommandPlayer",
+            "getCommandPop",
+            "getCommandProx",
+            "getCommandRecycle",
+            "getCommandResearch",
+            "getCommandSend",
+            "getCommandSmall",
+            "getCommandStack",
+            "getCommandSteamId",
+            "getCommandTeam",
+            "getCommandTime",
+            "getCommandTimer",
+            "getCommandTranslateTo",
+            "getCommandTranslateFromTo",
+            "getCommandTTS",
+            "getCommandUnmute",
+            "getCommandUpkeep",
+            "getCommandUptime",
+            "getCommandWipe",
+            "getCommandTravelingVendor"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 2705
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2752,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/RustPlusLite.js": {
+      "filePath": "src/structures/RustPlusLite.js",
+      "contentHash": "10c1f6d63628d964e3b10e3dcd1487ea486529f9e39b918f9d4f0f4edde24cef",
+      "functions": [
+        {
+          "name": "rustPlusLiteConnectedEvent",
+          "params": [
+            "rustplusLite"
+          ],
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "rustPlusLiteConnectingEvent",
+          "params": [
+            "rustplusLite"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "rustPlusLiteDisconnectedEvent",
+          "params": [
+            "rustplusLite"
+          ],
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "rustPlusLiteErrorEvent",
+          "params": [
+            "rustplusLite",
+            "error"
+          ],
+          "exported": false,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "RustPlusLite",
+          "methods": [
+            "constructor",
+            "loadRustPlusLiteEvents",
+            "log",
+            "getInfoAsync",
+            "promoteToLeaderAsync",
+            "isResponseValid"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 78
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 155,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/Team.js": {
+      "filePath": "src/structures/Team.js",
+      "contentHash": "fa6d51fc0f04a89cfeb2b2add181c0a13c3ace066852c95934c29604f1f0a665",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Team",
+          "methods": [
+            "constructor",
+            "leaderSteamId",
+            "leaderSteamId",
+            "players",
+            "players",
+            "teamSize",
+            "teamSize",
+            "rustplus",
+            "rustplus",
+            "allOnline",
+            "allOnline",
+            "allOffline",
+            "allOffline",
+            "isLeaderSteamIdChanged",
+            "updateTeam",
+            "addPlayer",
+            "removePlayer",
+            "getPlayer",
+            "isPlayerInTeam",
+            "getPlayerLongestAlive",
+            "changeLeadership",
+            "getNewPlayers",
+            "getLeftPlayers"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 158
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 183,
+      "hasStructuralAnalysis": true
+    },
+    "src/structures/Time.js": {
+      "filePath": "src/structures/Time.js",
+      "contentHash": "16de936632cf36fd186d441a5ae8c04bc8240fa6093f7cd3b1a57801905f6614",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Time",
+          "methods": [
+            "constructor",
+            "dayLengthMinutes",
+            "dayLengthMinutes",
+            "timeScale",
+            "timeScale",
+            "sunrise",
+            "sunrise",
+            "sunset",
+            "sunset",
+            "time",
+            "time",
+            "rustplus",
+            "rustplus",
+            "client",
+            "client",
+            "startTime",
+            "startTime",
+            "timeTillDay",
+            "timeTillDay",
+            "timeTillNight",
+            "timeTillNight",
+            "timeTillActive",
+            "timeTillActive",
+            "isDayLengthMinutesChanged",
+            "isTimeScaleChanged",
+            "isSunriseChanged",
+            "isSunsetChanged",
+            "isTimeChanged",
+            "isDay",
+            "isNight",
+            "isTurnedDay",
+            "isTurnedNight",
+            "loadTimeTillConfig",
+            "updateTime",
+            "getTimeTillDayOrNight"
+          ],
+          "properties": [],
+          "exported": false,
+          "lineCount": 101
+        }
+      ],
+      "imports": [],
+      "exports": [],
+      "totalLines": 125,
+      "hasStructuralAnalysis": true
+    },
+    "src/templates/generalSettingsTemplate.json": {
+      "filePath": "src/templates/generalSettingsTemplate.json",
+      "contentHash": "01896a44b4efd2227d8b349ce779cb5a695f55f7031f1c812a78df989bcbfcf0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "src/templates/notificationSettingsTemplate.json": {
+      "filePath": "src/templates/notificationSettingsTemplate.json",
+      "contentHash": "4002d3e68b8ca1a2d836115be12c6857ecf9abb68e4aeea57a3d192ccf21e201",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 86,
+      "hasStructuralAnalysis": true
+    },
+    "src/util/constants.js": {
+      "filePath": "src/util/constants.js",
+      "contentHash": "618744117806ae4a2cca136141e2a9e72bf202150a7a3671b037f24a53fe9f93",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 116,
+      "hasStructuralAnalysis": true
+    },
+    "src/util/CreateCredentialsFile.js": {
+      "filePath": "src/util/CreateCredentialsFile.js",
+      "contentHash": "4525f491384f82e4e350120289f2d65784115dbf558c2d219ae26a64174e1e94",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 30,
+      "hasStructuralAnalysis": true
+    },
+    "src/util/CreateInstanceFile.js": {
+      "filePath": "src/util/CreateInstanceFile.js",
+      "contentHash": "124d12465c80f9e49bcdc51b023b137fd5916bdc0d931d1af64040cc51c7578b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 210,
+      "hasStructuralAnalysis": true
+    },
+    "src/util/decay.js": {
+      "filePath": "src/util/decay.js",
+      "contentHash": "ecdbd4abeaa016ad628ee513b0e6876c9ef05e826b98b31a483994f45aab9eff",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 70,
+      "hasStructuralAnalysis": true
+    },
+    "src/util/FcmListener.js": {
+      "filePath": "src/util/FcmListener.js",
+      "contentHash": "daf9617254ddae9d8b8dde2986485650ed82a54e98340373746b0a7a25c22608",
+      "functions": [
+        {
+          "name": "isValidUrl",
+          "params": [
+            "url"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "pairingServer",
+          "params": [
+            "client",
+            "guild",
+            "title",
+            "message",
+            "body"
+          ],
+          "exported": false,
+          "lineCount": 56
+        },
+        {
+          "name": "pairingEntitySwitch",
+          "params": [
+            "client",
+            "guild",
+            "title",
+            "message",
+            "body"
+          ],
+          "exported": false,
+          "lineCount": 49
+        },
+        {
+          "name": "pairingEntitySmartAlarm",
+          "params": [
+            "client",
+            "guild",
+            "title",
+            "message",
+            "body"
+          ],
+          "exported": false,
+          "lineCount": 47
+        },
+        {
+          "name": "pairingEntityStorageMonitor",
+          "params": [
+            "client",
+            "guild",
+            "title",
+            "message",
+            "body"
+          ],
+          "exported": false,
+          "lineCount": 68
+        },
+        {
+          "name": "alarmAlarm",
+          "params": [
+            "client",
+            "guild",
+            "title",
+            "message",
+            "body"
+          ],
+          "exported": false,
+          "lineCount": 27
+        },
+        {
+          "name": "alarmRaidAlarm",
+          "params": [
+            "client",
+            "guild",
+            "title",
+            "message",
+            "body"
+          ],
+          "exported": false,
+          "lineCount": 25
+        },
+        {
+          "name": "playerDeath",
+          "params": [
+            "client",
+            "guild",
+            "title",
+            "message",
+            "body",
+            "discordUserId"
+          ],
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "teamLogin",
+          "params": [
+            "client",
+            "guild",
+            "title",
+            "message",
+            "body"
+          ],
+          "exported": false,
+          "lineCount": 20
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 544,
+      "hasStructuralAnalysis": true
+    },
+    "src/util/FcmListenerLite.js": {
+      "filePath": "src/util/FcmListenerLite.js",
+      "contentHash": "a8a4b60621c7707ef486a471f726af19ed9b3c6bb98d4898e575d6e72d127df0",
+      "functions": [
+        {
+          "name": "isValidUrl",
+          "params": [
+            "url"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "pairingServer",
+          "params": [
+            "client",
+            "guild",
+            "steamId",
+            "title",
+            "message",
+            "body"
+          ],
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "pairingEntitySwitch",
+          "params": [
+            "client",
+            "guild",
+            "title",
+            "message",
+            "body"
+          ],
+          "exported": false,
+          "lineCount": 49
+        },
+        {
+          "name": "pairingEntitySmartAlarm",
+          "params": [
+            "client",
+            "guild",
+            "title",
+            "message",
+            "body"
+          ],
+          "exported": false,
+          "lineCount": 47
+        },
+        {
+          "name": "pairingEntityStorageMonitor",
+          "params": [
+            "client",
+            "guild",
+            "title",
+            "message",
+            "body"
+          ],
+          "exported": false,
+          "lineCount": 68
+        },
+        {
+          "name": "playerDeath",
+          "params": [
+            "client",
+            "guild",
+            "title",
+            "message",
+            "body",
+            "discordUserId"
+          ],
+          "exported": false,
+          "lineCount": 14
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 363,
+      "hasStructuralAnalysis": true
+    },
+    "src/util/instanceUtils.js": {
+      "filePath": "src/util/instanceUtils.js",
+      "contentHash": "521c5b22f6810e2a8c26207dcddd19489d637816e979682d4da778ab6f00013d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 65,
+      "hasStructuralAnalysis": true
+    },
+    "src/util/keywords.js": {
+      "filePath": "src/util/keywords.js",
+      "contentHash": "ea7ca8cf00053e6c79dc150d7ed1a1615495696ee69913d91915c7545ba0c66e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 132,
+      "hasStructuralAnalysis": true
+    },
+    "src/util/languages.js": {
+      "filePath": "src/util/languages.js",
+      "contentHash": "7863213118badc738a2d782954a979d7d1928b362a464c8bb55c9eb98a7a3dd2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 241,
+      "hasStructuralAnalysis": true
+    },
+    "src/util/map.js": {
+      "filePath": "src/util/map.js",
+      "contentHash": "203f03ec7c60f305164d87763c4c0bc68626688364c8d8f3655986aa360854d6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 158,
+      "hasStructuralAnalysis": true
+    },
+    "src/util/scrape.js": {
+      "filePath": "src/util/scrape.js",
+      "contentHash": "d8491a10f66a4f4d2093bd09850343a94a111e57bc8b66e171c9e5e8458ff25c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 72,
+      "hasStructuralAnalysis": true
+    },
+    "src/util/timer.js": {
+      "filePath": "src/util/timer.js",
+      "contentHash": "e87962e874a6a06efe39413e2da8675b6072b53023f888f0d0387e5be3d038a2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 221,
+      "hasStructuralAnalysis": true
+    },
+    "src/util/utils.js": {
+      "filePath": "src/util/utils.js",
+      "contentHash": "cbf15bbf3a709c65e46efa868906859bda9de90df7535404122649961209b44e",
+      "functions": [
+        {
+          "name": "levenshteinDistance",
+          "params": [
+            "s1",
+            "s2"
+          ],
+          "exported": false,
+          "lineCount": 32
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 118,
+      "hasStructuralAnalysis": true
+    },
+    "tsconfig.json": {
+      "filePath": "tsconfig.json",
+      "contentHash": "b55f4f56592ee51f06c1781ad880631d2b66612cf80507ae12b6cd1675015e3a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 16,
+      "hasStructuralAnalysis": true
+    },
+    "update.bat": {
+      "filePath": "update.bat",
+      "contentHash": "5805dcaa0998f47c832afa3046f774cdd17c889ff465d9ec075c82a577b9ac0f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 46,
+      "hasStructuralAnalysis": false
+    },
+    "update.sh": {
+      "filePath": "update.sh",
+      "contentHash": "9b4cbd38f0e9753f233396273e545e5fb2e47a4328e05144cd6c166034bbec79",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 46,
+      "hasStructuralAnalysis": true
+    }
+  }
+}

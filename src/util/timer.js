@@ -159,10 +159,12 @@ module.exports = {
         let hours = Math.floor(time);
         let minutes = Math.floor((time - hours) * 60);
 
-        hours = (hours < 10) ? `0${hours}`.toString() : hours.toString();
+        const period = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12;
+
         minutes = (minutes < 10) ? `0${minutes}`.toString() : minutes.toString();
 
-        return `${hours}:${minutes}`;
+        return `${hours}:${minutes} ${period}`;
     },
 
     getSecondsFromStringTime: function (str) {

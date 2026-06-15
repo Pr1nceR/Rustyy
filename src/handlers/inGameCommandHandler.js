@@ -169,6 +169,14 @@ module.exports = {
             commandLowerCase === `${prefix}${client.intlGet(guildId, 'commandSyntaxTeam')}`) {
             rustplus.sendInGameMessage(rustplus.getCommandTeam());
         }
+        else if (commandLowerCase === `${prefix}${client.intlGet('en', 'commandSyntaxPlaytime')}` ||
+            commandLowerCase === `${prefix}${client.intlGet(guildId, 'commandSyntaxPlaytime')}`) {
+            rustplus.sendInGameMessage(await rustplus.getCommandPlaytime());
+        }
+        else if (commandLowerCase === `${prefix}${client.intlGet('en', 'commandSyntaxAfktime')}` ||
+            commandLowerCase === `${prefix}${client.intlGet(guildId, 'commandSyntaxAfktime')}`) {
+            rustplus.sendInGameMessage(rustplus.getCommandAfktime());
+        }
         else if (commandLowerCase === `${prefix}${client.intlGet('en', 'commandSyntaxTime')}` ||
             commandLowerCase === `${prefix}${client.intlGet(guildId, 'commandSyntaxTime')}`) {
             rustplus.sendInGameMessage(rustplus.getCommandTime());

@@ -48,24 +48,17 @@ async function addTextChannel(name, idName, client, guild, parent, permissionWri
         channel = await DiscordTools.addTextChannel(guild.id, name);
         instance.channelId[idName] = channel.id;
         client.setInstance(guild.id, instance);
-
-        try {
-            channel.setParent(parent.id);
-        }
-        catch (e) {
-            client.log(client.intlGet(null, 'errorCap'),
-                client.intlGet(null, 'couldNotSetParent', { channelId: channel.id }), 'error');
-        }
     }
 
-    if (instance.firstTime) {
-        try {
-            channel.setParent(parent.id);
+    /* Ensure channel is under the category */
+    try {
+        if (!channel.parentId || channel.parentId !== parent.id) {
+            await channel.setParent(parent.id);
         }
-        catch (e) {
-            client.log(client.intlGet(null, 'errorCap'),
-                client.intlGet(null, 'couldNotSetParent', { channelId: channel.id }), 'error');
-        }
+    }
+    catch (e) {
+        client.log(client.intlGet(null, 'errorCap'),
+            client.intlGet(null, 'couldNotSetParent', { channelId: channel.id }), 'error');
     }
 
     const perms = PermissionHandler.getPermissionsReset(client, guild, permissionWrite);
@@ -81,5 +74,10 @@ async function addTextChannel(name, idName, client, guild, parent, permissionWri
        It is possible to just remove the channels and let the bot recreate them with correct name language */
     //channel.setName(name);
 
-    channel.lockPermissions();
+    try {
+        await channel.lockPermissions();
+    }
+    catch (e) {
+        /* Ignore - GuildChannelOrphan or Missing Permissions */
+    }
 }

@@ -212,6 +212,12 @@ class DiscordBot extends Discord.Client {
         await require('../discordTools/RegisterSlashCommands')(this, guild);
 
         let category = await require('../discordTools/SetupGuildCategory')(this, guild);
+        if (!category) {
+            this.log(this.intlGet(null, 'errorCap'),
+                `Could not create category for guild: ${guild.name} (${guild.id}). ` +
+                `Ensure the bot has Manage Channels permission.`, 'error');
+            return;
+        }
         await require('../discordTools/SetupGuildChannels')(this, guild, category);
         if (firstTime) {
             const perms = PermissionHandler.getPermissionsRemoved(this, guild);

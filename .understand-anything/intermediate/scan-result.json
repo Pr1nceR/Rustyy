@@ -1,0 +1,1568 @@
+{
+  "name": "rustplusplus",
+  "description": "A NodeJS Discord Bot that uses the rustplus.js library to utilize the power of the Rust+ Companion App with additional Quality-of-Life features.",
+  "languages": [
+    "batch",
+    "dockerfile",
+    "fnt",
+    "javascript",
+    "json",
+    "markdown",
+    "shell",
+    "typescript",
+    "unknown",
+    "yaml"
+  ],
+  "frameworks": [
+    "Discord.js",
+    "Docker",
+    "Docker Compose"
+  ],
+  "files": [
+    {
+      "path": ".dockerignore",
+      "language": "unknown",
+      "sizeLines": 1,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "language": "markdown",
+      "sizeLines": 20,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/workflows/docker-publish.yml",
+      "language": "yaml",
+      "sizeLines": 61,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/lint.yml",
+      "language": "yaml",
+      "sizeLines": 19,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/tmp/gen-ignore.cjs",
+      "language": "javascript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "config/index.js",
+      "language": "javascript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "language": "markdown",
+      "sizeLines": 103,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "crowdin.yml",
+      "language": "yaml",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": "docker-compose.yml",
+      "language": "yaml",
+      "sizeLines": 13,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 17,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "docs/commands.md",
+      "language": "markdown",
+      "sizeLines": 731,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/credentials_web_version.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/credentials.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/discord_bot_setup.md",
+      "language": "markdown",
+      "sizeLines": 68,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/discord_text_channels.md",
+      "language": "markdown",
+      "sizeLines": 139,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/documentation.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/full_list_features.md",
+      "language": "markdown",
+      "sizeLines": 102,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/installation.md",
+      "language": "markdown",
+      "sizeLines": 20,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/pair_and_connect_to_server.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/smart_devices.md",
+      "language": "markdown",
+      "sizeLines": 88,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "FAQ.md",
+      "language": "markdown",
+      "sizeLines": 60,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "index.ts",
+      "language": "typescript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 44,
+      "fileCategory": "config"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 84,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/commands/alarm.js",
+      "language": "javascript",
+      "sizeLines": 109,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/alias.js",
+      "language": "javascript",
+      "sizeLines": 216,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/blacklist.js",
+      "language": "javascript",
+      "sizeLines": 263,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/cctv.js",
+      "language": "javascript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/craft.js",
+      "language": "javascript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/credentials.js",
+      "language": "javascript",
+      "sizeLines": 304,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/decay.js",
+      "language": "javascript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/despawn.js",
+      "language": "javascript",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/help.js",
+      "language": "javascript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/item.js",
+      "language": "javascript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/leader.js",
+      "language": "javascript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/map.js",
+      "language": "javascript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/market.js",
+      "language": "javascript",
+      "sizeLines": 413,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/players.js",
+      "language": "javascript",
+      "sizeLines": 392,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/recycle.js",
+      "language": "javascript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/research.js",
+      "language": "javascript",
+      "sizeLines": 109,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/reset.js",
+      "language": "javascript",
+      "sizeLines": 273,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/role.js",
+      "language": "javascript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/stack.js",
+      "language": "javascript",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/storagemonitor.js",
+      "language": "javascript",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/switch.js",
+      "language": "javascript",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/upkeep.js",
+      "language": "javascript",
+      "sizeLines": 164,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/uptime.js",
+      "language": "javascript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/commands/voice.js",
+      "language": "javascript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordEvents/error.js",
+      "language": "javascript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordEvents/guildCreate.js",
+      "language": "javascript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordEvents/guildMemberRemove.js",
+      "language": "javascript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordEvents/interactionCreate.js",
+      "language": "javascript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordEvents/messageCreate.js",
+      "language": "javascript",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordEvents/rateLimited.js",
+      "language": "javascript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordEvents/ready.js",
+      "language": "javascript",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordEvents/voiceStateUpdate.js",
+      "language": "javascript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/discordButtons.js",
+      "language": "javascript",
+      "sizeLines": 566,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/discordEmbeds.js",
+      "language": "javascript",
+      "sizeLines": 1410,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/discordMessages.js",
+      "language": "javascript",
+      "sizeLines": 602,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/discordModals.js",
+      "language": "javascript",
+      "sizeLines": 346,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/discordSelectMenus.js",
+      "language": "javascript",
+      "sizeLines": 321,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/discordTextInputs.js",
+      "language": "javascript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/discordTools.js",
+      "language": "javascript",
+      "sizeLines": 308,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/discordVoice.js",
+      "language": "javascript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/RegisterSlashCommands.js",
+      "language": "javascript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/RemoveGuildChannels.js",
+      "language": "javascript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/SetupAlarms.js",
+      "language": "javascript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/SetupGuildCategory.js",
+      "language": "javascript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/SetupGuildChannels.js",
+      "language": "javascript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/SetupServerList.js",
+      "language": "javascript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/SetupSettingsMenu.js",
+      "language": "javascript",
+      "sizeLines": 299,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/SetupStorageMonitors.js",
+      "language": "javascript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/SetupSwitches.js",
+      "language": "javascript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/SetupSwitchGroups.js",
+      "language": "javascript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/discordTools/SetupTrackers.js",
+      "language": "javascript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/external/findUnusedPhrases.js",
+      "language": "javascript",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/external/process_items.js",
+      "language": "javascript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/external/process_rustlabs.js",
+      "language": "javascript",
+      "sizeLines": 1041,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/battlemetricsHandler.js",
+      "language": "javascript",
+      "sizeLines": 439,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/buttonHandler.js",
+      "language": "javascript",
+      "sizeLines": 1160,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/discordCommandHandler.js",
+      "language": "javascript",
+      "sizeLines": 226,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/informationHandler.js",
+      "language": "javascript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/inGameChatHandler.js",
+      "language": "javascript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/inGameCommandHandler.js",
+      "language": "javascript",
+      "sizeLines": 239,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/modalHandler.js",
+      "language": "javascript",
+      "sizeLines": 398,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/permissionHandler.js",
+      "language": "javascript",
+      "sizeLines": 123,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/pollingHandler.js",
+      "language": "javascript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/selectMenuHandler.js",
+      "language": "javascript",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/smartAlarmHandler.js",
+      "language": "javascript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/smartSwitchGroupHandler.js",
+      "language": "javascript",
+      "sizeLines": 206,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/smartSwitchHandler.js",
+      "language": "javascript",
+      "sizeLines": 520,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/storageMonitorHandler.js",
+      "language": "javascript",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/teamChatHandler.js",
+      "language": "javascript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/teamHandler.js",
+      "language": "javascript",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/timeHandler.js",
+      "language": "javascript",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/handlers/vendingMachineHandler.js",
+      "language": "javascript",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/languages/cs.json",
+      "language": "json",
+      "sizeLines": 789,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/languages/de.json",
+      "language": "json",
+      "sizeLines": 789,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/languages/en.json",
+      "language": "json",
+      "sizeLines": 789,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/languages/es.json",
+      "language": "json",
+      "sizeLines": 789,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/languages/fr.json",
+      "language": "json",
+      "sizeLines": 789,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/languages/it.json",
+      "language": "json",
+      "sizeLines": 789,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/languages/ko.json",
+      "language": "json",
+      "sizeLines": 789,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/languages/pl.json",
+      "language": "json",
+      "sizeLines": 789,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/languages/pt.json",
+      "language": "json",
+      "sizeLines": 789,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/languages/ru.json",
+      "language": "json",
+      "sizeLines": 789,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/languages/sv.json",
+      "language": "json",
+      "sizeLines": 789,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/languages/tr.json",
+      "language": "json",
+      "sizeLines": 789,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/resources/fonts/PermanentMarker.fnt",
+      "language": "fnt",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/resources/fonts/YuGothic.fnt",
+      "language": "fnt",
+      "sizeLines": 541,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/rustplusEvents/connected.js",
+      "language": "javascript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/rustplusEvents/connecting.js",
+      "language": "javascript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/rustplusEvents/disconnected.js",
+      "language": "javascript",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/rustplusEvents/error.js",
+      "language": "javascript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/rustplusEvents/message.js",
+      "language": "javascript",
+      "sizeLines": 272,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/rustplusEvents/request.js",
+      "language": "javascript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/staticFiles/actors.json",
+      "language": "json",
+      "sizeLines": 45,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/cctv.json",
+      "language": "json",
+      "sizeLines": 113,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/htmlReservedSymbols.json",
+      "language": "json",
+      "sizeLines": 102,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/items.json",
+      "language": "json",
+      "sizeLines": 6027,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/RandomUsernames.json",
+      "language": "json",
+      "sizeLines": 5167,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/rustlabsBuildingBlocks.json",
+      "language": "json",
+      "sizeLines": 101,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/rustlabsCraftData.json",
+      "language": "json",
+      "sizeLines": 7107,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/rustlabsDecayData.json",
+      "language": "json",
+      "sizeLines": 2959,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/rustlabsDespawnData.json",
+      "language": "json",
+      "sizeLines": 3161,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/rustlabsDurabilityData.json",
+      "language": "json",
+      "sizeLines": 784151,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/rustlabsOther.json",
+      "language": "json",
+      "sizeLines": 57,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/rustlabsRecycleData.json",
+      "language": "json",
+      "sizeLines": 20977,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/rustlabsResearchData.json",
+      "language": "json",
+      "sizeLines": 2301,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/rustlabsSmeltingData.json",
+      "language": "json",
+      "sizeLines": 1362,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/rustlabsStackData.json",
+      "language": "json",
+      "sizeLines": 2365,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/staticFiles/rustlabsUpkeepData.json",
+      "language": "json",
+      "sizeLines": 736,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/structures/Battlemetrics.js",
+      "language": "javascript",
+      "sizeLines": 819,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/structures/Cctv.js",
+      "language": "javascript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/structures/DiscordBot.js",
+      "language": "javascript",
+      "sizeLines": 552,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/structures/Info.js",
+      "language": "javascript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/structures/Items.js",
+      "language": "javascript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/structures/Logger.js",
+      "language": "javascript",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/structures/Map.js",
+      "language": "javascript",
+      "sizeLines": 520,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/structures/MapMarkers.js",
+      "language": "javascript",
+      "sizeLines": 900,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/structures/Player.js",
+      "language": "javascript",
+      "sizeLines": 173,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/structures/RustLabs.js",
+      "language": "javascript",
+      "sizeLines": 829,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/structures/RustPlus.js",
+      "language": "javascript",
+      "sizeLines": 2751,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/structures/RustPlusLite.js",
+      "language": "javascript",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/structures/Team.js",
+      "language": "javascript",
+      "sizeLines": 182,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/structures/Time.js",
+      "language": "javascript",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/templates/generalSettingsTemplate.json",
+      "language": "json",
+      "sizeLines": 25,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/templates/notificationSettingsTemplate.json",
+      "language": "json",
+      "sizeLines": 85,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/util/constants.js",
+      "language": "javascript",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/util/CreateCredentialsFile.js",
+      "language": "javascript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/util/CreateInstanceFile.js",
+      "language": "javascript",
+      "sizeLines": 209,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/util/decay.js",
+      "language": "javascript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/util/FcmListener.js",
+      "language": "javascript",
+      "sizeLines": 543,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/util/FcmListenerLite.js",
+      "language": "javascript",
+      "sizeLines": 362,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/util/instanceUtils.js",
+      "language": "javascript",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/util/keywords.js",
+      "language": "javascript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/util/languages.js",
+      "language": "javascript",
+      "sizeLines": 240,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/util/map.js",
+      "language": "javascript",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/util/scrape.js",
+      "language": "javascript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/util/timer.js",
+      "language": "javascript",
+      "sizeLines": 220,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/util/utils.js",
+      "language": "javascript",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tsconfig.json",
+      "language": "json",
+      "sizeLines": 15,
+      "fileCategory": "config"
+    },
+    {
+      "path": "update.bat",
+      "language": "batch",
+      "sizeLines": 45,
+      "fileCategory": "script"
+    },
+    {
+      "path": "update.sh",
+      "language": "shell",
+      "sizeLines": 45,
+      "fileCategory": "script"
+    }
+  ],
+  "totalFiles": 166,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "large",
+  "importMap": {
+    ".dockerignore": [],
+    ".github/ISSUE_TEMPLATE/bug_report.md": [],
+    ".github/ISSUE_TEMPLATE/feature_request.md": [],
+    ".github/workflows/docker-publish.yml": [],
+    ".github/workflows/lint.yml": [],
+    ".understand-anything/.understandignore": [],
+    ".understand-anything/tmp/gen-ignore.cjs": [],
+    "config/index.js": [],
+    "CONTRIBUTING.md": [],
+    "crowdin.yml": [],
+    "docker-compose.yml": [],
+    "Dockerfile": [],
+    "docs/commands.md": [],
+    "docs/credentials_web_version.md": [],
+    "docs/credentials.md": [],
+    "docs/discord_bot_setup.md": [],
+    "docs/discord_text_channels.md": [],
+    "docs/documentation.md": [],
+    "docs/full_list_features.md": [],
+    "docs/installation.md": [],
+    "docs/pair_and_connect_to_server.md": [],
+    "docs/smart_devices.md": [],
+    "FAQ.md": [],
+    "index.ts": [
+      "src/structures/DiscordBot.js"
+    ],
+    "package.json": [],
+    "README.md": [],
+    "src/commands/alarm.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordMessages.js",
+      "src/util/instanceUtils.js"
+    ],
+    "src/commands/alias.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/util/constants.js"
+    ],
+    "src/commands/blacklist.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordTools.js",
+      "src/handlers/permissionHandler.js",
+      "src/util/constants.js",
+      "src/util/scrape.js"
+    ],
+    "src/commands/cctv.js": [
+      "src/discordTools/discordMessages.js"
+    ],
+    "src/commands/craft.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordMessages.js"
+    ],
+    "src/commands/credentials.js": [
+      "config/index.js",
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordTools.js",
+      "src/util/FcmListener.js",
+      "src/util/FcmListenerLite.js",
+      "src/util/instanceUtils.js"
+    ],
+    "src/commands/decay.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/util/timer.js"
+    ],
+    "src/commands/despawn.js": [
+      "src/discordTools/discordEmbeds.js"
+    ],
+    "src/commands/help.js": [
+      "src/discordTools/discordMessages.js"
+    ],
+    "src/commands/item.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordMessages.js"
+    ],
+    "src/commands/leader.js": [
+      "src/discordTools/discordEmbeds.js"
+    ],
+    "src/commands/map.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/util/constants.js"
+    ],
+    "src/commands/market.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/util/constants.js"
+    ],
+    "src/commands/players.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordTools.js",
+      "src/util/constants.js"
+    ],
+    "src/commands/recycle.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordMessages.js"
+    ],
+    "src/commands/research.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordMessages.js"
+    ],
+    "src/commands/reset.js": [
+      "config/index.js",
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordTools.js",
+      "src/discordTools/RemoveGuildChannels.js",
+      "src/discordTools/SetupAlarms.js",
+      "src/discordTools/SetupGuildCategory.js",
+      "src/discordTools/SetupGuildChannels.js",
+      "src/discordTools/SetupServerList.js",
+      "src/discordTools/SetupSettingsMenu.js",
+      "src/discordTools/SetupStorageMonitors.js",
+      "src/discordTools/SetupSwitches.js",
+      "src/discordTools/SetupSwitchGroups.js",
+      "src/discordTools/SetupTrackers.js",
+      "src/handlers/permissionHandler.js"
+    ],
+    "src/commands/role.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordTools.js",
+      "src/discordTools/SetupGuildCategory.js",
+      "src/discordTools/SetupGuildChannels.js",
+      "src/handlers/permissionHandler.js"
+    ],
+    "src/commands/stack.js": [
+      "src/discordTools/discordEmbeds.js"
+    ],
+    "src/commands/storagemonitor.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordMessages.js",
+      "src/util/instanceUtils.js"
+    ],
+    "src/commands/switch.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordMessages.js",
+      "src/handlers/smartSwitchGroupHandler.js",
+      "src/util/instanceUtils.js"
+    ],
+    "src/commands/upkeep.js": [
+      "src/discordTools/discordEmbeds.js"
+    ],
+    "src/commands/uptime.js": [
+      "src/discordTools/discordMessages.js",
+      "src/util/timer.js"
+    ],
+    "src/commands/voice.js": [
+      "src/discordTools/discordMessages.js"
+    ],
+    "src/discordEvents/error.js": [],
+    "src/discordEvents/guildCreate.js": [
+      "src/util/CreateCredentialsFile.js",
+      "src/util/CreateInstanceFile.js"
+    ],
+    "src/discordEvents/guildMemberRemove.js": [
+      "src/util/instanceUtils.js"
+    ],
+    "src/discordEvents/interactionCreate.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/handlers/buttonHandler.js",
+      "src/handlers/modalHandler.js",
+      "src/handlers/selectMenuHandler.js"
+    ],
+    "src/discordEvents/messageCreate.js": [
+      "src/discordTools/discordTools.js",
+      "src/handlers/discordCommandHandler.js"
+    ],
+    "src/discordEvents/rateLimited.js": [],
+    "src/discordEvents/ready.js": [
+      "config/index.js",
+      "src/handlers/battlemetricsHandler.js",
+      "src/util/CreateCredentialsFile.js",
+      "src/util/CreateInstanceFile.js"
+    ],
+    "src/discordEvents/voiceStateUpdate.js": [
+      "src/util/constants.js"
+    ],
+    "src/discordTools/discordButtons.js": [
+      "index.ts",
+      "src/util/constants.js"
+    ],
+    "src/discordTools/discordEmbeds.js": [
+      "index.ts",
+      "src/discordTools/discordTools.js",
+      "src/util/constants.js",
+      "src/util/instanceUtils.js",
+      "src/util/timer.js"
+    ],
+    "src/discordTools/discordMessages.js": [
+      "index.ts",
+      "src/discordTools/discordButtons.js",
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordSelectMenus.js",
+      "src/discordTools/discordTools.js",
+      "src/util/constants.js",
+      "src/util/scrape.js"
+    ],
+    "src/discordTools/discordModals.js": [
+      "index.ts",
+      "src/discordTools/discordTextInputs.js"
+    ],
+    "src/discordTools/discordSelectMenus.js": [
+      "index.ts",
+      "src/util/constants.js",
+      "src/util/languages.js"
+    ],
+    "src/discordTools/discordTextInputs.js": [],
+    "src/discordTools/discordTools.js": [
+      "index.ts"
+    ],
+    "src/discordTools/discordVoice.js": [
+      "index.ts",
+      "src/staticFiles/actors.json"
+    ],
+    "src/discordTools/RegisterSlashCommands.js": [
+      "config/index.js"
+    ],
+    "src/discordTools/RemoveGuildChannels.js": [
+      "src/discordTools/discordTools.js"
+    ],
+    "src/discordTools/SetupAlarms.js": [
+      "src/discordTools/discordMessages.js"
+    ],
+    "src/discordTools/SetupGuildCategory.js": [
+      "src/discordTools/discordTools.js",
+      "src/handlers/permissionHandler.js"
+    ],
+    "src/discordTools/SetupGuildChannels.js": [
+      "src/discordTools/discordTools.js",
+      "src/handlers/permissionHandler.js"
+    ],
+    "src/discordTools/SetupServerList.js": [
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordTools.js"
+    ],
+    "src/discordTools/SetupSettingsMenu.js": [
+      "src/discordTools/discordButtons.js",
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordSelectMenus.js",
+      "src/discordTools/discordTools.js",
+      "src/util/constants.js"
+    ],
+    "src/discordTools/SetupStorageMonitors.js": [
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordTools.js",
+      "src/util/constants.js"
+    ],
+    "src/discordTools/SetupSwitches.js": [
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordTools.js"
+    ],
+    "src/discordTools/SetupSwitchGroups.js": [
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordTools.js"
+    ],
+    "src/discordTools/SetupTrackers.js": [
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordTools.js"
+    ],
+    "src/external/findUnusedPhrases.js": [],
+    "src/external/process_items.js": [],
+    "src/external/process_rustlabs.js": [
+      "src/util/utils.js"
+    ],
+    "src/handlers/battlemetricsHandler.js": [
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordTools.js",
+      "src/util/constants.js",
+      "src/util/scrape.js"
+    ],
+    "src/handlers/buttonHandler.js": [
+      "config/index.js",
+      "src/discordTools/discordButtons.js",
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordModals.js",
+      "src/discordTools/discordTools.js",
+      "src/handlers/smartSwitchGroupHandler.js"
+    ],
+    "src/handlers/discordCommandHandler.js": [
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordTools.js"
+    ],
+    "src/handlers/informationHandler.js": [
+      "src/discordTools/discordMessages.js"
+    ],
+    "src/handlers/inGameChatHandler.js": [
+      "src/util/constants.js"
+    ],
+    "src/handlers/inGameCommandHandler.js": [
+      "src/handlers/smartAlarmHandler.js",
+      "src/handlers/smartSwitchGroupHandler.js",
+      "src/handlers/smartSwitchHandler.js"
+    ],
+    "src/handlers/modalHandler.js": [
+      "src/discordTools/discordMessages.js",
+      "src/structures/Battlemetrics.js",
+      "src/util/constants.js",
+      "src/util/keywords.js",
+      "src/util/scrape.js"
+    ],
+    "src/handlers/permissionHandler.js": [
+      "src/discordTools/discordTools.js"
+    ],
+    "src/handlers/pollingHandler.js": [
+      "src/handlers/informationHandler.js",
+      "src/handlers/smartAlarmHandler.js",
+      "src/handlers/smartSwitchHandler.js",
+      "src/handlers/storageMonitorHandler.js",
+      "src/handlers/teamHandler.js",
+      "src/handlers/timeHandler.js",
+      "src/handlers/vendingMachineHandler.js",
+      "src/structures/Info.js",
+      "src/structures/MapMarkers.js",
+      "src/structures/Team.js",
+      "src/structures/Time.js"
+    ],
+    "src/handlers/selectMenuHandler.js": [
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordSelectMenus.js",
+      "src/discordTools/discordTools.js",
+      "src/discordTools/RegisterSlashCommands.js"
+    ],
+    "src/handlers/smartAlarmHandler.js": [
+      "src/discordTools/discordMessages.js",
+      "src/util/timer.js"
+    ],
+    "src/handlers/smartSwitchGroupHandler.js": [
+      "src/discordTools/discordMessages.js",
+      "src/util/timer.js"
+    ],
+    "src/handlers/smartSwitchHandler.js": [
+      "src/discordTools/discordMessages.js",
+      "src/handlers/smartSwitchGroupHandler.js",
+      "src/util/map.js",
+      "src/util/timer.js"
+    ],
+    "src/handlers/storageMonitorHandler.js": [
+      "src/discordTools/discordMessages.js",
+      "src/util/constants.js"
+    ],
+    "src/handlers/teamChatHandler.js": [
+      "src/discordTools/discordMessages.js"
+    ],
+    "src/handlers/teamHandler.js": [
+      "src/discordTools/discordMessages.js",
+      "src/util/constants.js"
+    ],
+    "src/handlers/timeHandler.js": [],
+    "src/handlers/vendingMachineHandler.js": [
+      "src/discordTools/discordMessages.js",
+      "src/util/map.js"
+    ],
+    "src/languages/cs.json": [],
+    "src/languages/de.json": [],
+    "src/languages/en.json": [],
+    "src/languages/es.json": [],
+    "src/languages/fr.json": [],
+    "src/languages/it.json": [],
+    "src/languages/ko.json": [],
+    "src/languages/pl.json": [],
+    "src/languages/pt.json": [],
+    "src/languages/ru.json": [],
+    "src/languages/sv.json": [],
+    "src/languages/tr.json": [],
+    "src/resources/fonts/PermanentMarker.fnt": [],
+    "src/resources/fonts/YuGothic.fnt": [],
+    "src/rustplusEvents/connected.js": [
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/SetupAlarms.js",
+      "src/discordTools/SetupStorageMonitors.js",
+      "src/discordTools/SetupSwitches.js",
+      "src/discordTools/SetupSwitchGroups.js",
+      "src/handlers/pollingHandler.js",
+      "src/structures/Info.js",
+      "src/structures/Map.js"
+    ],
+    "src/rustplusEvents/connecting.js": [],
+    "src/rustplusEvents/disconnected.js": [
+      "config/index.js",
+      "src/discordTools/discordMessages.js"
+    ],
+    "src/rustplusEvents/error.js": [
+      "src/discordTools/discordMessages.js"
+    ],
+    "src/rustplusEvents/message.js": [
+      "src/discordTools/discordMessages.js",
+      "src/handlers/inGameChatHandler.js",
+      "src/handlers/inGameCommandHandler.js",
+      "src/handlers/smartSwitchGroupHandler.js",
+      "src/handlers/teamChatHandler.js",
+      "src/handlers/teamHandler.js",
+      "src/util/constants.js"
+    ],
+    "src/rustplusEvents/request.js": [],
+    "src/staticFiles/actors.json": [],
+    "src/staticFiles/cctv.json": [],
+    "src/staticFiles/htmlReservedSymbols.json": [],
+    "src/staticFiles/items.json": [],
+    "src/staticFiles/RandomUsernames.json": [],
+    "src/staticFiles/rustlabsBuildingBlocks.json": [],
+    "src/staticFiles/rustlabsCraftData.json": [],
+    "src/staticFiles/rustlabsDecayData.json": [],
+    "src/staticFiles/rustlabsDespawnData.json": [],
+    "src/staticFiles/rustlabsDurabilityData.json": [],
+    "src/staticFiles/rustlabsOther.json": [],
+    "src/staticFiles/rustlabsRecycleData.json": [],
+    "src/staticFiles/rustlabsResearchData.json": [],
+    "src/staticFiles/rustlabsSmeltingData.json": [],
+    "src/staticFiles/rustlabsStackData.json": [],
+    "src/staticFiles/rustlabsUpkeepData.json": [],
+    "src/structures/Battlemetrics.js": [
+      "index.ts",
+      "src/staticFiles/RandomUsernames.json",
+      "src/util/utils.js"
+    ],
+    "src/structures/Cctv.js": [],
+    "src/structures/DiscordBot.js": [
+      "config/index.js",
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordTools.js",
+      "src/discordTools/RegisterSlashCommands.js",
+      "src/discordTools/SetupGuildCategory.js",
+      "src/discordTools/SetupGuildChannels.js",
+      "src/discordTools/SetupSettingsMenu.js",
+      "src/handlers/permissionHandler.js",
+      "src/structures/Battlemetrics.js",
+      "src/structures/Cctv.js",
+      "src/structures/Items.js",
+      "src/structures/Logger.js",
+      "src/structures/RustLabs.js",
+      "src/structures/RustPlus.js",
+      "src/util/FcmListener.js",
+      "src/util/FcmListenerLite.js",
+      "src/util/instanceUtils.js"
+    ],
+    "src/structures/Info.js": [
+      "src/util/map.js",
+      "src/util/timer.js"
+    ],
+    "src/structures/Items.js": [
+      "src/util/utils.js"
+    ],
+    "src/structures/Logger.js": [
+      "config/index.js"
+    ],
+    "src/structures/Map.js": [
+      "index.ts",
+      "src/util/constants.js"
+    ],
+    "src/structures/MapMarkers.js": [
+      "src/util/constants.js",
+      "src/util/map.js",
+      "src/util/timer.js"
+    ],
+    "src/structures/Player.js": [
+      "src/util/constants.js",
+      "src/util/map.js",
+      "src/util/timer.js"
+    ],
+    "src/structures/RustLabs.js": [
+      "src/staticFiles/rustlabsBuildingBlocks.json",
+      "src/staticFiles/rustlabsCraftData.json",
+      "src/staticFiles/rustlabsDecayData.json",
+      "src/staticFiles/rustlabsDespawnData.json",
+      "src/staticFiles/rustlabsDurabilityData.json",
+      "src/staticFiles/rustlabsOther.json",
+      "src/staticFiles/rustlabsRecycleData.json",
+      "src/staticFiles/rustlabsResearchData.json",
+      "src/staticFiles/rustlabsSmeltingData.json",
+      "src/staticFiles/rustlabsStackData.json",
+      "src/staticFiles/rustlabsUpkeepData.json",
+      "src/structures/Items.js",
+      "src/util/utils.js"
+    ],
+    "src/structures/RustPlus.js": [
+      "index.ts",
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordTools.js",
+      "src/discordTools/discordVoice.js",
+      "src/handlers/inGameChatHandler.js",
+      "src/handlers/teamHandler.js",
+      "src/structures/Logger.js",
+      "src/structures/RustPlusLite.js",
+      "src/util/constants.js",
+      "src/util/decay.js",
+      "src/util/instanceUtils.js",
+      "src/util/languages.js",
+      "src/util/map.js",
+      "src/util/timer.js"
+    ],
+    "src/structures/RustPlusLite.js": [
+      "config/index.js",
+      "index.ts"
+    ],
+    "src/structures/Team.js": [
+      "index.ts",
+      "src/structures/Player.js"
+    ],
+    "src/structures/Time.js": [
+      "src/util/timer.js"
+    ],
+    "src/templates/generalSettingsTemplate.json": [],
+    "src/templates/notificationSettingsTemplate.json": [],
+    "src/util/constants.js": [],
+    "src/util/CreateCredentialsFile.js": [],
+    "src/util/CreateInstanceFile.js": [
+      "src/util/instanceUtils.js"
+    ],
+    "src/util/decay.js": [],
+    "src/util/FcmListener.js": [
+      "src/discordTools/discordButtons.js",
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordTools.js",
+      "src/structures/Battlemetrics.js",
+      "src/util/constants.js",
+      "src/util/instanceUtils.js",
+      "src/util/map.js",
+      "src/util/scrape.js"
+    ],
+    "src/util/FcmListenerLite.js": [
+      "src/discordTools/discordEmbeds.js",
+      "src/discordTools/discordMessages.js",
+      "src/discordTools/discordTools.js",
+      "src/util/constants.js",
+      "src/util/instanceUtils.js",
+      "src/util/map.js",
+      "src/util/scrape.js"
+    ],
+    "src/util/instanceUtils.js": [
+      "index.ts"
+    ],
+    "src/util/keywords.js": [],
+    "src/util/languages.js": [],
+    "src/util/map.js": [
+      "index.ts"
+    ],
+    "src/util/scrape.js": [
+      "src/util/constants.js",
+      "src/util/utils.js"
+    ],
+    "src/util/timer.js": [],
+    "src/util/utils.js": [],
+    "tsconfig.json": [],
+    "update.bat": [],
+    "update.sh": []
+  }
+}

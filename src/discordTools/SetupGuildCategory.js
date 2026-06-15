@@ -29,7 +29,12 @@ module.exports = async (client, guild) => {
         category = DiscordTools.getCategoryById(guild.id, instance.channelId.category);
     }
     if (category === undefined) {
-        category = await DiscordTools.addCategory(guild.id, 'rustplusplus');
+        category = await DiscordTools.addCategory(guild.id, 'rustyy');
+        if (!category) {
+            client.log(client.intlGet(null, 'errorCap'),
+                `Could not create category: rustyy`, 'error');
+            return undefined;
+        }
         instance.channelId.category = category.id;
         client.setInstance(guild.id, instance);
     }

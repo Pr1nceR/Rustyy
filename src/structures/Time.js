@@ -100,24 +100,38 @@ class Time {
     }
 
     getTimeTillDayOrNight(ignore = '') {
-        if (!this.timeTillActive) {
-            return null;
+        if (this.timeTillActive) {
+            let object = null;
+            if (this.isDay()) {
+                object = this.timeTillNight;
+            }
+            else {
+                object = this.timeTillDay;
+            }
+
+            let time = this.time;
+            let closest = Object.keys(object).map(Number).reduce(function (a, b) {
+                return (Math.abs(b - time) < Math.abs(a - time) ? b : a);
+            });
+
+            return TimeLib.secondsToFullScale(object[closest], ignore);
         }
 
-        let object = null;
+        /* Estimate from game time when calibration data is not yet available */
+        let gameHoursLeft;
         if (this.isDay()) {
-            object = this.timeTillNight;
+            gameHoursLeft = this.sunset - this.time;
         }
         else {
-            object = this.timeTillDay;
+            gameHoursLeft = this.time >= this.sunset
+                ? (24 - this.time) + this.sunrise
+                : this.sunrise - this.time;
         }
 
-        let time = this.time;
-        let closest = Object.keys(object).map(Number).reduce(function (a, b) {
-            return (Math.abs(b - time) < Math.abs(a - time) ? b : a);
-        });
+        const realSecondsPerGameHour = (this.dayLengthMinutes * 60) / 24;
+        const estimatedSeconds = gameHoursLeft * realSecondsPerGameHour;
 
-        return TimeLib.secondsToFullScale(object[closest], ignore);
+        return TimeLib.secondsToFullScale(estimatedSeconds, ignore);
     }
 
 }

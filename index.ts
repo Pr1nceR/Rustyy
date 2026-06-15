@@ -18,6 +18,7 @@
 
 */
 
+require('dotenv').config();
 const Discord = require('discord.js');
 const Fs = require('fs');
 const Path = require('path');

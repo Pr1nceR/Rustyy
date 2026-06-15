@@ -83,7 +83,13 @@ module.exports = {
 
                     if (player.isGoneAfk(playerUpdated)) {
                         if (instance.generalSettings.afkNotify) {
-                            const str = client.intlGet(guildId, 'playerJustWentAfk', { name: player.name });
+                            const location = player.pos === null ? 'unknown' : player.pos.string;
+                            const afkTime = Math.floor(Constants.AFK_TIME_SECONDS / 60);
+                            const str = client.intlGet(guildId, 'playerJustWentAfk', {
+                                name: player.name,
+                                time: afkTime,
+                                location: location
+                            });
                             rustplus.sendInGameMessage(str);
                             rustplus.log(client.intlGet(null, 'infoCap'), str);
                         }
@@ -102,7 +108,10 @@ module.exports = {
                     }
 
                     if (player.isGoneOnline(playerUpdated)) {
-                        const str = client.intlGet(guildId, 'playerJustConnected', { name: player.name });
+                        const offlineTime = player.getOfflineTime('s');
+                        const str = offlineTime
+                            ? client.intlGet(guildId, 'playerJustConnected', { name: player.name, lastSeen: offlineTime })
+                            : client.intlGet(guildId, 'playerJustConnectedNoLastSeen', { name: player.name });
                         await DiscordMessages.sendActivityNotificationMessage(
                             guildId, serverId, Constants.COLOR_ACTIVE, str, player.steamId);
                         if (instance.generalSettings.connectionNotify) await rustplus.sendInGameMessage(str);

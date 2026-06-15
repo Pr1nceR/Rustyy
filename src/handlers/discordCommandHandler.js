@@ -162,6 +162,14 @@ module.exports = {
             commandLowerCase === `${prefix}${client.intlGet(guildId, 'commandSyntaxTeam')}`) {
             response = rustplus.getCommandTeam();
         }
+        else if (commandLowerCase === `${prefix}${client.intlGet('en', 'commandSyntaxPlaytime')}` ||
+            commandLowerCase === `${prefix}${client.intlGet(guildId, 'commandSyntaxPlaytime')}`) {
+            response = await rustplus.getCommandPlaytime();
+        }
+        else if (commandLowerCase === `${prefix}${client.intlGet('en', 'commandSyntaxAfktime')}` ||
+            commandLowerCase === `${prefix}${client.intlGet(guildId, 'commandSyntaxAfktime')}`) {
+            response = rustplus.getCommandAfktime();
+        }
         else if (commandLowerCase === `${prefix}${client.intlGet('en', 'commandSyntaxTime')}` ||
             commandLowerCase === `${prefix}${client.intlGet(guildId, 'commandSyntaxTime')}`) {
             response = rustplus.getCommandTime();

@@ -39,6 +39,7 @@ class Player {
         this._lastMovement = new Date();
         this._teamLeader = false;
         this._afkSeconds = 0;
+        this._totalAfkSeconds = 0;
         this._wentOfflineTime = null;
 
         this.updatePos();
@@ -71,6 +72,8 @@ class Player {
     set teamLeader(teamLeader) { this._teamLeader = teamLeader; }
     get afkSeconds() { return this._afkSeconds; }
     set afkSeconds(afkSeconds) { this._afkSeconds = afkSeconds; }
+    get totalAfkSeconds() { return this._totalAfkSeconds; }
+    set totalAfkSeconds(totalAfkSeconds) { this._totalAfkSeconds = totalAfkSeconds; }
     get wentOfflineTime() { return this._wentOfflineTime; }
     set wentOfflineTime(wentOfflineTime) { this._wentOfflineTime = wentOfflineTime; }
 
@@ -104,6 +107,11 @@ class Player {
 
     updatePlayer(player) {
         if (this.isGoneOffline(player)) {
+            if (this.isAfk()) {
+                this.totalAfkSeconds += this.afkSeconds;
+                this.afkSeconds = 0;
+                this.rustplus.saveAfkData();
+            }
             this.wentOfflineTime = new Date();
         }
 
@@ -113,6 +121,10 @@ class Player {
         }
 
         if (this.isMoved(player)) {
+            if (this.isAfk()) {
+                this.totalAfkSeconds += this.afkSeconds;
+                this.rustplus.saveAfkData();
+            }
             this.lastMovement = new Date();
             this.afkSeconds = 0;
         }
@@ -148,6 +160,10 @@ class Player {
 
     getAfkSeconds() { return (new Date() - this.lastMovement) / 1000; }
     getAfkTime(ignore = '') { return Time.secondsToFullScale(this.getAfkSeconds(), ignore); }
+    getTotalAfkSeconds() {
+        return this.totalAfkSeconds + (this.isAfk() ? this.afkSeconds : 0);
+    }
+    getTotalAfkTime(ignore = '') { return Time.secondsToFullScale(this.getTotalAfkSeconds(), ignore); }
 
     getAliveSeconds() {
         if (this.spawnTime === 0) return 0;
