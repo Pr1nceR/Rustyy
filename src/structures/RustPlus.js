@@ -758,6 +758,112 @@ class RustPlus extends RustPlusLib {
         return `Top AFK Time (this wipe):\n${lines.join('\n')}`;
     }
 
+    async getCommandTrack(command) {
+        const prefix = this.generalSettings.prefix;
+        const guildId = this.guildId;
+        const client = Client.client;
+        const instance = client.getInstance(guildId);
+        const commandTrack = `${prefix}${client.intlGet(guildId, 'commandSyntaxTrack')}`;
+        const commandTrackEn = `${prefix}${client.intlGet('en', 'commandSyntaxTrack')}`;
+
+        /* Find or create tracker for this server */
+        let trackerId = null;
+        for (const [id, content] of Object.entries(instance.trackers)) {
+            if (content.serverId === this.serverId) {
+                trackerId = id;
+                break;
+            }
+        }
+
+        const cmdLower = command.toLowerCase();
+
+        /* !track with no args — list tracked players */
+        if (cmdLower === commandTrack || cmdLower === commandTrackEn) {
+            if (!trackerId || instance.trackers[trackerId].players.length === 0) {
+                return 'No players being tracked.';
+            }
+            const tracker = instance.trackers[trackerId];
+            const names = tracker.players.map(p => p.name).join(', ');
+            return `Tracked (${tracker.players.length}): ${names}`;
+        }
+
+        /* Extract player name from command */
+        let playerName = null;
+        if (cmdLower.startsWith(`${commandTrack} `)) {
+            playerName = command.slice(`${commandTrack} `.length).trim();
+        } else if (cmdLower.startsWith(`${commandTrackEn} `)) {
+            playerName = command.slice(`${commandTrackEn} `.length).trim();
+        }
+        if (!playerName) return null;
+
+        /* Get the active server's battlemetricsId */
+        const server = instance.serverList[this.serverId];
+        if (!server || !server.battlemetricsId) {
+            return 'Battlemetrics not available for this server.';
+        }
+        const bmId = server.battlemetricsId;
+        const bmInstance = client.battlemetricsInstances[bmId];
+        if (!bmInstance) {
+            return 'Battlemetrics instance not ready.';
+        }
+
+        /* Create tracker if none exists for this server */
+        if (!trackerId) {
+            trackerId = client.findAvailableTrackerId(guildId);
+            instance.trackers[trackerId] = {
+                name: 'InGame Tracker',
+                serverId: this.serverId,
+                battlemetricsId: bmId,
+                title: server.title,
+                img: server.img || Constants.DEFAULT_SERVER_IMG,
+                clanTag: '',
+                everyone: false,
+                inGame: true,
+                players: [],
+                messageId: null
+            };
+            client.setInstance(guildId, instance);
+            await DiscordMessages.sendTrackerMessage(guildId, trackerId);
+        }
+
+        const tracker = instance.trackers[trackerId];
+
+        /* Check if player is already tracked (by name, case-insensitive) */
+        const existingIdx = tracker.players.findIndex(
+            p => p.name && p.name.toLowerCase() === playerName.toLowerCase()
+        );
+
+        if (existingIdx !== -1) {
+            /* Remove — untrack */
+            const removed = tracker.players.splice(existingIdx, 1)[0];
+            client.setInstance(guildId, instance);
+            await DiscordMessages.sendTrackerMessage(guildId, trackerId);
+            return `Untracked: ${removed.name}`;
+        }
+
+        /* Find player in Battlemetrics by name */
+        let bmPlayerId = null;
+        const nameLower = playerName.toLowerCase();
+        for (const [id, p] of Object.entries(bmInstance.players)) {
+            if (p.name && p.name.toLowerCase() === nameLower) {
+                bmPlayerId = id;
+                playerName = p.name; /* Use exact casing from BM */
+                break;
+            }
+        }
+
+        tracker.players.push({
+            name: playerName,
+            steamId: null,
+            playerId: bmPlayerId
+        });
+        client.setInstance(guildId, instance);
+        await DiscordMessages.sendTrackerMessage(guildId, trackerId);
+
+        const status = bmPlayerId ? '(matched)' : '(not found on BM yet)';
+        return `Now tracking: ${playerName} ${status}`;
+    }
+
     getCommandAlive(command) {
         const prefix = this.generalSettings.prefix;
         const commandAlive = `${prefix}${Client.client.intlGet(this.guildId, 'commandSyntaxAlive')}`;
