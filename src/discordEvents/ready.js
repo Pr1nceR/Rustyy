@@ -47,7 +47,7 @@ module.exports = {
         }
 
         try {
-            await client.user.setAvatar(Path.join(__dirname, '..', '..', 'rustyy.png'));
+            await client.user.setAvatar(Path.join(__dirname, '..', '..', 'gikko2.png'));
         }
         catch (e) {
             client.log(client.intlGet(null, 'warningCap'), client.intlGet(null, 'ignoreSetAvatar'));

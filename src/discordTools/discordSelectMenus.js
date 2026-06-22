@@ -116,7 +116,7 @@ module.exports = {
                     {
                         label: 'rustyy',
                         description: Client.client.intlGet(guildId, 'trademarkShownBeforeMessage', {
-                            trademark: 'rustyy'
+                            trademark: 'NOT SHOWING'
                         }),
                         value: 'rustyy'
                     },

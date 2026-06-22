@@ -88,7 +88,7 @@ module.exports = (client, guild) => {
             const generalSettings = client.readGeneralSettingsTemplate();
 
             /* Keys that should always match the template (our customizations) */
-            const forceSync = ['connectionNotify', 'afkNotify', 'trademark', 'muteInGameBotMessages'];
+            const forceSync = ['connectionNotify', 'afkNotify', 'trademark', 'muteInGameBotMessages', 'inGameCommandsEnabled'];
             for (const key of forceSync) {
                 if (generalSettings.hasOwnProperty(key)) {
                     instance.generalSettings[key] = generalSettings[key];

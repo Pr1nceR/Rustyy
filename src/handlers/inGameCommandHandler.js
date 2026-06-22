@@ -21,6 +21,7 @@
 const SmartAlarmHandler = require('./smartAlarmHandler.js');
 const SmartSwitchGroupHandler = require('./smartSwitchGroupHandler.js');
 const SmartSwitchHandler = require('./smartSwitchHandler.js');
+const RustoriaApi = require('../util/rustoriaApi.js');
 
 module.exports = {
     inGameCommandHandler: async function (rustplus, client, message) {
@@ -94,6 +95,90 @@ module.exports = {
         else if (commandLowerCase === `${prefix}${client.intlGet('en', 'commandSyntaxLarge')}` ||
             commandLowerCase === `${prefix}${client.intlGet(guildId, 'commandSyntaxLarge')}`) {
             rustplus.sendInGameMessage(rustplus.getCommandLarge());
+        }
+        else if (commandLowerCase === `${prefix}${client.intlGet('en', 'commandSyntaxLeaderboard')}` ||
+            commandLowerCase === `${prefix}${client.intlGet(guildId, 'commandSyntaxLeaderboard')}` ||
+            commandLowerCase === `${prefix}leaderboards` ||
+            commandLowerCase === `${prefix}lb`) {
+            try {
+                const teamPlayers = rustplus.team.players.map(p => p.name);
+                if (teamPlayers.length === 0) {
+                    rustplus.sendInGameMessage('No team members found.');
+                } else {
+                    const results = await RustoriaApi.getTeamLeaderboard(teamPlayers);
+                    if (results.length === 0) {
+                        rustplus.sendInGameMessage('No stats found for team members.');
+                    } else {
+                        rustplus.sendInGameMessage(':gem: Team Leaderboard (PVP)');
+                        const top5 = results.slice(0, 5);
+                        for (let i = 0; i < top5.length; i++) {
+                            const r = top5[i];
+                            const rank = r.rank ? `#${r.rank}` : '>200';
+                            rustplus.sendInGameMessage(
+                                `${i + 1}. ${r.username} | K:${r.kills} D:${r.deaths} KDR:${r.kdr} | ${rank}`);
+                        }
+                    }
+                }
+            } catch (e) {
+                rustplus.sendInGameMessage('Failed to fetch leaderboard from Rustoria.');
+            }
+        }
+        else if (commandLowerCase.startsWith(`${prefix}${client.intlGet('en', 'commandSyntaxTopfarmer')}`) ||
+            commandLowerCase.startsWith(`${prefix}${client.intlGet(guildId, 'commandSyntaxTopfarmer')}`)) {
+            const arg = command.slice(command.indexOf(' ') + 1).trim().toLowerCase();
+            const validResources = ['sulfur', 'metal', 'hqm', 'stone', 'wood'];
+            const resource = (arg && validResources.includes(arg)) ? arg : null;
+            try {
+                const teamPlayers = rustplus.team.players.map(p => p.name);
+                if (teamPlayers.length === 0) {
+                    rustplus.sendInGameMessage('No team members found.');
+                } else {
+                    const results = await RustoriaApi.getTeamFarmers(teamPlayers, resource);
+                    if (results.length === 0) {
+                        rustplus.sendInGameMessage('No farming stats found for team.');
+                    } else {
+                        const label = resource ? resource.charAt(0).toUpperCase() + resource.slice(1) : 'Weighted';
+                        rustplus.sendInGameMessage(`:catwhat: Top Farmers (${label})`);
+                        const top5 = results.slice(0, 5);
+                        for (let i = 0; i < top5.length; i++) {
+                            const r = top5[i];
+                            if (resource) {
+                                rustplus.sendInGameMessage(
+                                    `${i + 1}. ${r.username} | ${r[resource].toLocaleString()}`);
+                            } else {
+                                rustplus.sendInGameMessage(
+                                    `${i + 1}. ${r.username} | S:${r.sulfur} M:${r.metal} St:${r.stone} W:${r.wood}`);
+                            }
+                        }
+                    }
+                }
+            } catch (e) {
+                rustplus.sendInGameMessage('Failed to fetch farming stats from Rustoria.');
+            }
+        }
+        else if (commandLowerCase === `${prefix}${client.intlGet('en', 'commandSyntaxPlantita')}` ||
+            commandLowerCase === `${prefix}${client.intlGet(guildId, 'commandSyntaxPlantita')}`) {
+            try {
+                const teamPlayers = rustplus.team.players.map(p => p.name);
+                if (teamPlayers.length === 0) {
+                    rustplus.sendInGameMessage('No team members found.');
+                } else {
+                    const results = await RustoriaApi.getTeamPlantita(teamPlayers);
+                    if (results.length === 0) {
+                        rustplus.sendInGameMessage('No plant stats found for team.');
+                    } else {
+                        rustplus.sendInGameMessage(':catsmile: Plantita Leaderboard');
+                        const top5 = results.slice(0, 5);
+                        for (let i = 0; i < top5.length; i++) {
+                            const r = top5[i];
+                            rustplus.sendInGameMessage(
+                                `${i + 1}. ${r.username} | Cloth:${r.cloth} YB:${r.yb} RB:${r.rb} BB:${r.bb}`);
+                        }
+                    }
+                }
+            } catch (e) {
+                rustplus.sendInGameMessage('Failed to fetch plant stats from Rustoria.');
+            }
         }
         else if (commandLowerCase.startsWith(`${prefix}${client.intlGet('en', 'commandSyntaxLeader')}`) ||
             commandLowerCase.startsWith(`${prefix}${client.intlGet(guildId, 'commandSyntaxLeader')}`)) {
@@ -222,6 +307,48 @@ module.exports = {
         else if (commandLowerCase === `${prefix}${client.intlGet('en', 'commandSyntaxTravelingVendor')}` ||
             commandLowerCase === `${prefix}${client.intlGet(guildId, 'commandSyntaxTravelingVendor')}`) {
             rustplus.sendInGameMessage(rustplus.getCommandTravelingVendor());
+        }
+        else if (commandLowerCase.startsWith(`${prefix}${client.intlGet('en', 'commandSyntaxStat')} `) ||
+            commandLowerCase.startsWith(`${prefix}${client.intlGet(guildId, 'commandSyntaxStat')} `) ||
+            commandLowerCase.startsWith(`${prefix}stats `)) {
+            const args = command.slice(command.indexOf(' ') + 1).trim().split(' ');
+            const validCategories = RustoriaApi.CATEGORIES;
+            let category = 'pvp';
+            let usernameParts = [];
+
+            for (const arg of args) {
+                if (validCategories.includes(arg.toLowerCase())) {
+                    category = arg.toLowerCase();
+                } else {
+                    usernameParts.push(arg);
+                }
+            }
+            const username = usernameParts.join(' ');
+
+            if (!username) {
+                rustplus.sendInGameMessage('Usage: !stat <name> [category]');
+            } else {
+                try {
+                    const data = await RustoriaApi.getPlayerStats('vanilla_medium_sea', username, category);
+                    if (!data.leaderboard || data.leaderboard.length === 0) {
+                        rustplus.sendInGameMessage(`No stats found for "${username}" (${category})`);
+                    } else {
+                        const p = data.leaderboard[0];
+                        const d = p.data;
+                        if (category === 'pvp') {
+                            rustplus.sendInGameMessage(
+                                `${p.username} | KDR: ${d.kdr} | K: ${d.pvp_player_kills_total} | ` +
+                                `D: ${d.pvp_player_deaths_total} | HS: ${d.pvp_player_headshot} | Acc: ${d.accuracy}%`);
+                        } else {
+                            const top3 = Object.entries(d).slice(0, 3)
+                                .map(([k, v]) => `${RustoriaApi.formatStatKey(k)}: ${v}`).join(' | ');
+                            rustplus.sendInGameMessage(`${p.username} [${category}] | ${top3}`);
+                        }
+                    }
+                } catch (e) {
+                    rustplus.sendInGameMessage('Failed to fetch stats from Rustoria.');
+                }
+            }
         }
         else {
             /* Maybe a custom command? */
